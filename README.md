@@ -1,4 +1,4 @@
-# ProjetoCsharp2018
+# Biblioteca Digital
 Projeto de sistema feito para a matéria de C#
 
 Sobre:
@@ -23,7 +23,26 @@ Funcionalidades:
 - Consulta de Empréstimos por usuário
 - Mostrar ao Admin se um empréstimo passou ou não da data de devolução
 
+Tabelas:    
 
+Usuário: user_tb    
+id_user
+login
+pass
+type_user(bool)
+    
+Livros: livros_tb   
+id_livro
+titulo
+quantidade
+disponivel(bool)
+    
+Emprestimos:  emprestimos_tb
+id_emprestimo
+user
+livro
+emprestado (data)
+devolucao (data)
 
 =-=-=-=-=-=-=-=-=-=-=-=-=-=         
 Equipe:   
