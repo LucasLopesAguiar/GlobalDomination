@@ -37,7 +37,7 @@ titulo
 quantidade
 disponivel(bool)
     
-Emprestimos:  emprestimos_tb
+Emprestimos:  emprestimos_tb        
 id_emprestimo
 user
 livro
