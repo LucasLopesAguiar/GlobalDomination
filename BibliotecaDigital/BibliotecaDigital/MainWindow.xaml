@@ -5,8 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BibliotecaDigital"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="Biblioteca Digital" Height="350" Width="525" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
     <Grid>
+        <Label Content="Biblioteca Digital" HorizontalAlignment="Left" Margin="142,11,0,0" VerticalAlignment="Top" Height="59" Width="226" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label x:Name="Login_Label" Content="Login:" HorizontalAlignment="Left" Margin="109,70,0,0" VerticalAlignment="Top" FontSize="18" FontFamily="Arial"/>
+        <Label x:Name="Pass_Label" Content="Senha:" HorizontalAlignment="Left" Margin="109,132,0,0" VerticalAlignment="Top" FontSize="18" FontFamily="Arial"/>
+        <TextBox x:Name="Login_Text" HorizontalAlignment="Left" Height="23" Margin="116,100,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="289"/>
+        <TextBox x:Name="Pass_Text" HorizontalAlignment="Left" Height="23" Margin="116,159,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="289"/>
+        <Button Content="Entrar" HorizontalAlignment="Left" Margin="116,187,0,0" VerticalAlignment="Top" Width="135" Height="36" FontSize="18" FontFamily="Arial"/>
+        <Button Content="Cadastrar-se" HorizontalAlignment="Left" Margin="270,187,0,0" VerticalAlignment="Top" Width="135" Height="36" FontSize="18" FontFamily="Arial"/>
         
+        <Button Content="?" HorizontalAlignment="Left" Margin="480,281,0,0" VerticalAlignment="Top" Width="20"/>
+
+
+
     </Grid>
 </Window>
