@@ -13,15 +13,15 @@ Descrição base:
 - Após a data combinada o item deve ficar destacado na lista de coisas emprestadas
 
 Funcionalidades:
--Login
--Cadastro/Edição/Exclusão de Livro
--Cadastro/Edição/Exclusão de Usuário
--Consulta de Livro
--Empréstimo de Livro (com data)
--Telas para Usuário e Admin diferentes
--Listagem de Empréstimos (mais antiga para mais recente)
--Consulta de Empréstimos por usuário
--Mostrar ao Admin se um empréstimo passou ou não da data de devolução
+- Login
+- Cadastro/Edição/Exclusão de Livro
+- Cadastro/Edição/Exclusão de Usuário
+- Consulta de Livro
+- Empréstimo de Livro (com data)
+- Telas para Usuário e Admin diferentes
+- Listagem de Empréstimos (mais antiga para mais recente)
+- Consulta de Empréstimos por usuário
+- Mostrar ao Admin se um empréstimo passou ou não da data de devolução
 
 
 
