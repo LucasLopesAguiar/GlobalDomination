@@ -12,12 +12,9 @@
         <Label x:Name="Pass_Label" Content="Senha:" HorizontalAlignment="Left" Margin="109,132,0,0" VerticalAlignment="Top" FontSize="18" FontFamily="Arial"/>
         <TextBox x:Name="Login_Text" HorizontalAlignment="Left" Height="23" Margin="116,100,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="289"/>
         <TextBox x:Name="Pass_Text" HorizontalAlignment="Left" Height="23" Margin="116,159,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="289"/>
-        <Button Content="Entrar" HorizontalAlignment="Left" Margin="116,187,0,0" VerticalAlignment="Top" Width="135" Height="36" FontSize="18" FontFamily="Arial"/>
-        <Button Content="Cadastrar-se" HorizontalAlignment="Left" Margin="270,187,0,0" VerticalAlignment="Top" Width="135" Height="36" FontSize="18" FontFamily="Arial"/>
-        
-        <Button Content="?" HorizontalAlignment="Left" Margin="480,281,0,0" VerticalAlignment="Top" Width="20"/>
+        <Button x:Name="login_btn" Content="Entrar" HorizontalAlignment="Left" Margin="116,187,0,0" VerticalAlignment="Top" Width="135" Height="36" FontSize="18" FontFamily="Arial"/>
+        <Button x:Name="new_user_btn" Content="Cadastrar-se" HorizontalAlignment="Left" Margin="270,187,0,0" VerticalAlignment="Top" Width="135" Height="36" FontSize="18" FontFamily="Arial"/>
 
-
-
+        <Button x:Name="help_btn" Content="?" HorizontalAlignment="Left" Margin="480,281,0,0" VerticalAlignment="Top" Width="20" Click="help_btn_Click"/>
     </Grid>
 </Window>

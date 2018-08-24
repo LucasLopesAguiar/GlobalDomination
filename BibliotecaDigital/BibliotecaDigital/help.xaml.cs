@@ -10,25 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace BibliotecaDigital
 {
     /// <summary>
-    /// Interação lógica para MainWindow.xam
+    /// Lógica interna para help.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class help : Window
     {
-        public MainWindow()
+        public help()
         {
             InitializeComponent();
-        }
-
-        private void help_btn_Click(object sender, RoutedEventArgs e)
-        {
-            help window = new help();
-            window.ShowDialog();
         }
     }
 }
