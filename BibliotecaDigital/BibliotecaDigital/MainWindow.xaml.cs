@@ -30,5 +30,11 @@ namespace BibliotecaDigital
             help window = new help();
             window.ShowDialog();
         }
+
+        private void new_user_btn_Click(object sender, RoutedEventArgs e)
+        {
+            new_user window2 = new new_user();
+            window2.ShowDialog();
+        }
     }
 }
