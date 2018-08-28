@@ -23,6 +23,9 @@ Funcionalidades:
 - Consulta de Empréstimos por usuário
 - Mostrar ao Admin se um empréstimo passou ou não da data de devolução
 
+Icones:
+https://www.iconfinder.com/iconsets/office-222
+
 Tabelas:    
 
 Usuário: user_tb    
@@ -48,3 +51,8 @@ devolucao (data)
 Equipe:   
 Leonan Müller Luiz    
 Lucas Lopes de Aguiar
+
+=-=-=-=-==-=-=-=-=-=-=-=-==-
+Anotações:
+
+StartupUri="MainWindow.xaml"
