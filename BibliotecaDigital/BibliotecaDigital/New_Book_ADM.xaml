@@ -16,7 +16,7 @@
         <Label x:Name="title_New_Book_ADM" Content="Novo Livro" HorizontalAlignment="Left" Margin="285,10,0,0" VerticalAlignment="Top" FontSize="22" FontWeight="Bold" FontFamily="Arial Black"/>
 
         <Label x:Name="Nome_Book_ADM_Label" Content="Título:" HorizontalAlignment="Left" Margin="10,67,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="Nome_Book_ADM_Text" HorizontalAlignment="Left" Height="23" Margin="11,98,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="629" Padding="27,2,0,0" MaxLength="70" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="Nome_Book_ADM_Text" HorizontalAlignment="Left" Height="23" Margin="11,98,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="629" Padding="27,2,0,0" Grid.ColumnSpan="2" />
         <Image Source="/BibliotecaDigital;component/Icons/cadastra_livro.png" HorizontalAlignment="Left" Height="21" Margin="11,98,0,0" VerticalAlignment="Top" Width="21" RenderTransformOrigin="1.189,0.554"/>
         <Label x:Name="Editora_Book_ADM_Label" Content="Editora:" HorizontalAlignment="Left" Margin="11,130,0,0" VerticalAlignment="Top"/>
 
@@ -25,9 +25,9 @@
 
 
         <Button x:Name="Adicionar_book_user_btn_ADM" Content="Adicionar" HorizontalAlignment="Left" Margin="195,422,0,0" VerticalAlignment="Top" Width="122" Height="34"/>
-        <TextBox x:Name="Editora_Book_ADM_Text" HorizontalAlignment="Left" Height="23" Margin="11,161,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="375" Padding="27,2,0,0" MaxLength="40"/>
+        <TextBox x:Name="Editora_Book_ADM_Text" HorizontalAlignment="Left" Height="23" Margin="11,161,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="375" Padding="27,2,0,0" />
         <Image Source="/BibliotecaDigital;component/Icons/cadastra_livro.png" HorizontalAlignment="Left" Height="23" Margin="11,161,0,0" VerticalAlignment="Top" Width="21" RenderTransformOrigin="1.189,0.554"/>
-        <TextBox x:Name="Autor_Book_ADM_Text" HorizontalAlignment="Left" Height="23" Margin="11,220,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="375" Padding="27,2,0,0" MaxLength="40"/>
+        <TextBox x:Name="Autor_Book_ADM_Text" HorizontalAlignment="Left" Height="23" Margin="11,220,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="375" Padding="27,2,0,0" />
         <Image Source="/BibliotecaDigital;component/Icons/cadastra_livro.png" HorizontalAlignment="Left" Height="21" Margin="11,220,0,0" VerticalAlignment="Top" Width="21" RenderTransformOrigin="1.189,0.554"/>
         <Label x:Name="Categoria_Book_ADM_Label" Content="Categoria:" HorizontalAlignment="Left" Margin="402,130,0,0" VerticalAlignment="Top"/>
         <ComboBox HorizontalAlignment="Left" Margin="402,161,0,0" VerticalAlignment="Top" Width="238" Height="23" Grid.ColumnSpan="2">
@@ -68,7 +68,7 @@
         <TextBox x:Name="Ano_Book_ADM_Text" HorizontalAlignment="Left" Height="23" Margin="481,293,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="79" Padding="27,2,0,0" MaxLength="5" RenderTransformOrigin="0.347,0.63" Grid.ColumnSpan="2"/>
         <Image Source="/BibliotecaDigital;component/Icons/cadastra_livro.png" HorizontalAlignment="Left" Height="21" Margin="481,293,0,0" VerticalAlignment="Top" Width="21" RenderTransformOrigin="1.189,0.554" Grid.ColumnSpan="2"/>
         <Label x:Name="Descricao_Book_ADM_Label" Content="Descrição:" HorizontalAlignment="Left" Margin="11,340,0,0" VerticalAlignment="Top" Width="67"/>
-        <TextBox x:Name="Descricao_Book_ADM_Text" HorizontalAlignment="Left" Height="23" Margin="11,366,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="629" Padding="27,2,0,0" MaxLength="70" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="Descricao_Book_ADM_Text" HorizontalAlignment="Left" Height="23" Margin="11,366,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="629" Padding="27,2,0,0"  Grid.ColumnSpan="2"/>
         <Image Source="/BibliotecaDigital;component/Icons/cadastra_livro.png" HorizontalAlignment="Left" Height="21" Margin="11,366,0,0" VerticalAlignment="Top" Width="21" RenderTransformOrigin="1.189,0.554"/>
         <Button x:Name="Cancelar_book_btn_ADM" Content="Cancelar" HorizontalAlignment="Left" Margin="384,422,0,0" VerticalAlignment="Top" Width="122" Height="34" Grid.ColumnSpan="2"/>
         <CheckBox Content="Disponível" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1" Margin="77,67,0,0"/>
