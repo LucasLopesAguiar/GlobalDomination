@@ -27,7 +27,7 @@ namespace BibliotecaDigital.Telas_Internas
         private void MenuItem_Click(object sender, RoutedEventArgs e)
         {
                 New_User_ADM tela_Adm_usernew = new New_User_ADM();
-            tela_Adm_usernew.ShowDialog();
+                     tela_Adm_usernew.ShowDialog();
             }
         }
     }

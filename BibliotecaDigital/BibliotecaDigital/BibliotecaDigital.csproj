@@ -149,5 +149,19 @@
   <ItemGroup>
     <Resource Include="Icons\user.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\add_emprestimo_button.png" />
+    <Resource Include="Icons\add_user_button.png" />
+    <Resource Include="Icons\consulta_data_button.png" />
+    <Resource Include="Icons\consulta_usuario_button.png" />
+    <Resource Include="Icons\edit_livro_button.png" />
+    <Resource Include="Icons\edit_user_button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\add_livro_button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\sobre_sistema.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
