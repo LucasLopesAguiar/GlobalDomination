@@ -1,0 +1,36 @@
+﻿<Window x:Name="new_user_window" x:Class="BibliotecaDigital.new_user"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BibliotecaDigital"
+        mc:Ignorable="d"
+        Title="Cadastrar" Height="347" Width="347"
+        Icon="/BibliotecaDigital;component/Icons/main_icon.png"
+        WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <Label x:Name="title_label" Content="Novo Cadastro" HorizontalAlignment="Left" Margin="107,8,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
+
+        <Label x:Name="login_label" Content="Login:" HorizontalAlignment="Left" Margin="85,44,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="username_text" HorizontalAlignment="Left" Height="23" Margin="85,70,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="174" Padding="27,2,0,0" MaxLength="15"/>
+        <Image Source="/BibliotecaDigital;component/Icons/user.png" HorizontalAlignment="Left" Height="21" Margin="87,71,0,0" VerticalAlignment="Top" Width="21" RenderTransformOrigin="1.189,0.554"/>
+
+        <Label x:Name="senha_label" Content="Senha:" HorizontalAlignment="Left" Margin="85,109,0,0" VerticalAlignment="Top"/>
+        <PasswordBox  x:Name="senha_text"  HorizontalAlignment="Left" Height="23" Margin="85,135,0,0" VerticalAlignment="Top" Width="174" Padding="27,2,0,0" MaxLength="15"/>
+        <Image Source="/BibliotecaDigital;component/Icons/pass.png" HorizontalAlignment="Left" Height="21" Margin="87,137,0,0" VerticalAlignment="Top" Width="21" RenderTransformOrigin="1.189,0.554"/>
+
+
+        <Label x:Name="senha_check_label" Content="Confirmar Senha:" HorizontalAlignment="Left" Margin="85,174,0,0" VerticalAlignment="Top"/>
+        <PasswordBox x:Name="senha_check_text" HorizontalAlignment="Left" Height="23" Margin="85,200,0,0" VerticalAlignment="Top" Width="174" Padding="27,2,0,0" MaxLength="15"/>
+        <Image Source="/BibliotecaDigital;component/Icons/pass.png" HorizontalAlignment="Left" Height="21" Margin="87,201,0,0" VerticalAlignment="Top" Width="21" RenderTransformOrigin="1.189,0.554"/>
+
+
+        <Button x:Name="new_user_btn" Content="Cadastrar" HorizontalAlignment="Left" Margin="107,276,0,0" VerticalAlignment="Top" Width="122" Height="32"/>
+        <CheckBox Content="Usuário Administrador" HorizontalAlignment="Left" Margin="85,241,0,0" VerticalAlignment="Top" Height="15"/>
+
+
+
+
+
+    </Grid>
+</Window>
