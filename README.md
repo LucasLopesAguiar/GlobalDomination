@@ -55,4 +55,9 @@ Lucas Lopes de Aguiar
 =-=-=-=-==-=-=-=-=-=-=-=-==-
 Anotações:
 
+StartupUri="Telas_Internas/SystemLayoutAdmin.xaml"
 StartupUri="MainWindow.xaml"
+
+
+Login de usuario apenas com 15 caracters
+Senha de usuario apenas com 15 caracters

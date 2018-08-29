@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:BibliotecaDigital"
         mc:Ignorable="d"
         Title="Ajuda" Height="300" Width="300"
+        Icon="/BibliotecaDigital;component/Icons/main_icon.png"
         WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
     <Grid>
         
