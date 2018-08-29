@@ -26,9 +26,17 @@ namespace BibliotecaDigital.Telas_Internas
 
         private void MenuItem_Click(object sender, RoutedEventArgs e)
         {
+
+            //Chama tela cadastro
                 New_User_ADM tela_Adm_usernew = new New_User_ADM();
                      tela_Adm_usernew.ShowDialog();
             }
+
+        private void MenuItem_Click_1(object sender, RoutedEventArgs e)
+        {
+            SobreSistema tela_Adm_Sobre = new SobreSistema();
+            tela_Adm_Sobre.ShowDialog();
         }
+    }
     }
 
