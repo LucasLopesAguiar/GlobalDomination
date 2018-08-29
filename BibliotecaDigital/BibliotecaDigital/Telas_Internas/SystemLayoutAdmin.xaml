@@ -15,7 +15,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BibliotecaDigital.Telas_Internas"
         mc:Ignorable="d"
-        Title="Biblioteca Digital" Height="659" Width="580"
+        Title="Biblioteca Digital" Height="647" Width="491.5"
         Icon="/BibliotecaDigital;component/Icons/main_icon.png"
         WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
     <Grid>

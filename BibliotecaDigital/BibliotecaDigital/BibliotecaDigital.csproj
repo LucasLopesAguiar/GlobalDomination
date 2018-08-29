@@ -180,5 +180,8 @@
   <ItemGroup>
     <Resource Include="Icons\Library_sobre.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\cadastra_livro.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
