@@ -30,12 +30,12 @@
                     <!-- Primeiro Menu -->
                     <MenuItem Header="Usuário" Click="MenuItem_Click">
                         <MenuItem.Icon>
-                            <Image Source="/BibliotecaDigital;component/Icons/add_user.png"/>
+                            <Image  Source="/BibliotecaDigital;component/Icons/add_user.png"/>
                         </MenuItem.Icon>
                     </MenuItem>
-                    <MenuItem Header="Livro">
+                    <MenuItem Header="Livro" Click="MenuItem_Click_2">
                         <MenuItem.Icon>
-                            <Image Source="/BibliotecaDigital;component/Icons/add_livro.png"/>
+                            <Image  Source="/BibliotecaDigital;component/Icons/add_livro.png"/>
                         </MenuItem.Icon>
                     </MenuItem>
                 </MenuItem>
@@ -87,10 +87,10 @@
 
 
         </DockPanel>
-        <Button ToolTip="Adicionar usuário" HorizontalAlignment="Left" Margin="0,25,0,0" VerticalAlignment="Top" Width="57" Height="52">
+        <Button ToolTip="Adicionar usuário" HorizontalAlignment="Left" Margin="0,25,0,0" VerticalAlignment="Top" Width="57" Height="52" Click="Button_Click">
             <Image Source="/BibliotecaDigital;component/Icons/add_user_button.png" Height="42"/>
         </Button>
-        <Button ToolTip="Adicionar Livro"  HorizontalAlignment="Left" Margin="58,25,0,0" VerticalAlignment="Top" Width="57" Height="52">
+        <Button ToolTip="Adicionar Livro"  HorizontalAlignment="Left" Margin="58,25,0,0" VerticalAlignment="Top" Width="57" Height="52" Click="Button_Click_1">
             <Image Source="/BibliotecaDigital;component/Icons/add_livro_button.png" Height="42"/>
         </Button>
         <Button ToolTip="Editar Usuário"  HorizontalAlignment="Left" Margin="116,25,0,0" VerticalAlignment="Top" Width="57" Height="52">

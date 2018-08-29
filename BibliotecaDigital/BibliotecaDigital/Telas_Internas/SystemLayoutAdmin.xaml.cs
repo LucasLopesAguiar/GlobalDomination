@@ -37,6 +37,24 @@ namespace BibliotecaDigital.Telas_Internas
             SobreSistema tela_Adm_Sobre = new SobreSistema();
             tela_Adm_Sobre.ShowDialog();
         }
+
+        private void MenuItem_Click_2(object sender, RoutedEventArgs e)
+        {
+            New_Book_ADM tela_Adm_bookNew = new New_Book_ADM();
+            tela_Adm_bookNew.ShowDialog();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            New_User_ADM tela_Adm_usernew = new New_User_ADM();
+            tela_Adm_usernew.ShowDialog();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            New_Book_ADM tela_Adm_BookNew = new New_Book_ADM();
+            tela_Adm_BookNew.ShowDialog();
+        }
     }
     }
 

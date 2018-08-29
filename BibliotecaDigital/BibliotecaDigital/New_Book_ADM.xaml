@@ -16,7 +16,7 @@
         <Label x:Name="title_New_Book_ADM" Content="Novo Livro" HorizontalAlignment="Left" Margin="285,10,0,0" VerticalAlignment="Top" FontSize="22" FontWeight="Bold" FontFamily="Arial Black"/>
 
         <Label x:Name="Nome_Book_ADM_Label" Content="Título:" HorizontalAlignment="Left" Margin="10,67,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="Nome_Book_ADM_Text" HorizontalAlignment="Left" Height="23" Margin="11,98,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="673" Padding="27,2,0,0" MaxLength="15" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="Nome_Book_ADM_Text" HorizontalAlignment="Left" Height="23" Margin="11,98,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="629" Padding="27,2,0,0" MaxLength="15" Grid.ColumnSpan="2"/>
 
         <Label x:Name="Editora_Book_ADM_Label" Content="Editora:" HorizontalAlignment="Left" Margin="11,130,0,0" VerticalAlignment="Top"/>
 
