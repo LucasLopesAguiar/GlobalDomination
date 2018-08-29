@@ -117,5 +117,24 @@
   <ItemGroup>
     <Resource Include="Icons\add_user.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\add_livro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\edit_user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\edit_livro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\add_emprestimo.png" />
+    <Resource Include="Icons\consulta_data.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\consulta_usuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\main_icon.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -15,10 +15,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BibliotecaDigital.Telas_Internas"
         mc:Ignorable="d"
-        Title="Biblioteca Digital" Height="397" Width="614"
+        Title="Biblioteca Digital" Height="659" Width="918"
+        Icon="/BibliotecaDigital;component/Icons/main_icon.png"
         WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
     <Grid>
-        <DockPanel Height="27" Margin="0,-327,0,0">
+        <DockPanel Height="27" Margin="0,0,0,4" VerticalAlignment="Top">
             <Menu DockPanel.Dock="Top">
 
                 <MenuItem Header="Novo" Width="60" Height="27">
@@ -28,22 +29,46 @@
                             <Image Source="/BibliotecaDigital;component/Icons/add_user.png"/>
                         </MenuItem.Icon>
                     </MenuItem>
-                    <MenuItem Header="Livro"></MenuItem>
+                    <MenuItem Header="Livro">
+                        <MenuItem.Icon>
+                            <Image Source="/BibliotecaDigital;component/Icons/add_livro.png"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
                     <MenuItem Header=""></MenuItem>
                 </MenuItem>
 
                 <MenuItem Header="Editar" Width="60" Height="27">
                     <!-- Segundo Menu -->
-                    <MenuItem Header="Usuário"></MenuItem>
-                    <MenuItem Header="Livro"></MenuItem>
+                    <MenuItem Header="Usuário">
+                        <MenuItem.Icon>
+                            <Image Source="/BibliotecaDigital;component/Icons/edit_user.png"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Header="Livro">
+                        <MenuItem.Icon>
+                            <Image Source="/BibliotecaDigital;component/Icons/edit_livro.png"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
                     <MenuItem Header=""></MenuItem>
                 </MenuItem>
 
                 <MenuItem Header="Emprestimos" Width="82" Height="27">
                     <!-- Terceiro Menu -->
-                    <MenuItem Header="Novo"></MenuItem>
-                    <MenuItem Header="Consultar (por Data)"></MenuItem>
-                    <MenuItem Header="Consultar (por Usuário)"></MenuItem>
+                    <MenuItem Header="Novo">
+                        <MenuItem.Icon>
+                            <Image Source="/BibliotecaDigital;component/Icons/add_emprestimo.png"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Header="Consultar (por Data)">
+                        <MenuItem.Icon>
+                            <Image Source="/BibliotecaDigital;component/Icons/consulta_data.png"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Header="Consultar (por Usuário)">
+                        <MenuItem.Icon>
+                            <Image Source="/BibliotecaDigital;component/Icons/consulta_usuario.png"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
                 </MenuItem>
 
             </Menu>
