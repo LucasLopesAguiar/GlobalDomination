@@ -54,6 +54,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="New_Book_ADM.xaml.cs">
+      <DependentUpon>New_Book_ADM.xaml</DependentUpon>
+    </Compile>
     <Compile Include="New_User_ADM.xaml.cs">
       <DependentUpon>New_User_ADM.xaml</DependentUpon>
     </Compile>
@@ -82,6 +85,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="New_Book_ADM.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="new_user.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

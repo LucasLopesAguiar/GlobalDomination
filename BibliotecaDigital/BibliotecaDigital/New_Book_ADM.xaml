@@ -1,0 +1,47 @@
+﻿<Window x:Name="New_Book_ADM_window" x:Class="BibliotecaDigital.New_Book_ADM"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BibliotecaDigital"
+        mc:Ignorable="d"
+        Title="Cadastrar Livro" Height="512.44" Width="700.435"
+        Icon="/BibliotecaDigital;component/Icons/main_icon.png"
+        WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="495*"/>
+            <ColumnDefinition Width="199*"/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="title_New_Book_ADM" Content="Novo Livro" HorizontalAlignment="Left" Margin="285,10,0,0" VerticalAlignment="Top" FontSize="22" FontWeight="Bold" FontFamily="Arial Black"/>
+
+        <Label x:Name="Nome_Book_ADM_Label" Content="Título:" HorizontalAlignment="Left" Margin="10,67,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Nome_Book_ADM_Text" HorizontalAlignment="Left" Height="23" Margin="11,98,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="673" Padding="27,2,0,0" MaxLength="15" Grid.ColumnSpan="2"/>
+
+        <Label x:Name="Editora_Book_ADM_Label" Content="Editora:" HorizontalAlignment="Left" Margin="11,130,0,0" VerticalAlignment="Top"/>
+
+
+        <Label x:Name="Autor_Book_ADM_Label" Content="Autor:" HorizontalAlignment="Left" Margin="11,189,0,0" VerticalAlignment="Top" Width="49"/>
+
+
+        <Button x:Name="Adicionar_book_user_btn_ADM" Content="Adicionar" HorizontalAlignment="Left" Margin="150,422,0,0" VerticalAlignment="Top" Width="122" Height="34"/>
+        <TextBox x:Name="Editora_Book_ADM_Text" HorizontalAlignment="Left" Height="23" Margin="11,161,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="375" Padding="27,2,0,0" MaxLength="15"/>
+        <TextBox x:Name="Autor_Book_ADM_Text" HorizontalAlignment="Left" Height="23" Margin="11,220,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="375" Padding="27,2,0,0" MaxLength="15"/>
+        <Label x:Name="Categoria_Book_ADM_Label" Content="Categoria:" HorizontalAlignment="Left" Margin="402,130,0,0" VerticalAlignment="Top"/>
+        <ComboBox HorizontalAlignment="Left" Margin="402,161,0,0" VerticalAlignment="Top" Width="238" Height="23" Grid.ColumnSpan="2"/>
+        <Label x:Name="Pagina_Book_ADM_Label" Content="Página(s):" HorizontalAlignment="Left" Margin="413,217,0,0" VerticalAlignment="Top" Width="68"/>
+        <TextBox x:Name="Pagina_Book_ADM_Text" HorizontalAlignment="Left" Height="23" Margin="481,220,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="79" Padding="27,2,0,0" MaxLength="5" RenderTransformOrigin="0.347,0.63" Grid.ColumnSpan="2"/>
+        <Label x:Name="Classe_Book_ADM_Label" Content="Classe:" HorizontalAlignment="Left" Margin="11,262,0,0" VerticalAlignment="Top"/>
+        <ComboBox HorizontalAlignment="Left" Margin="11,293,0,0" VerticalAlignment="Top" Width="306" Height="23"/>
+        <Label x:Name="AnoPubli_Book_ADM_Label" Content="Ano Publicação:" HorizontalAlignment="Left" Margin="384,290,0,0" VerticalAlignment="Top" Width="97"/>
+        <TextBox x:Name="Ano_Book_ADM_Text" HorizontalAlignment="Left" Height="23" Margin="481,293,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="79" Padding="27,2,0,0" MaxLength="5" RenderTransformOrigin="0.347,0.63" Grid.ColumnSpan="2"/>
+        <Label x:Name="Descricao_Book_ADM_Label" Content="Descrição:" HorizontalAlignment="Left" Margin="11,340,0,0" VerticalAlignment="Top" Width="67"/>
+        <TextBox x:Name="Descricao_Book_ADM_Text" HorizontalAlignment="Left" Height="23" Margin="11,366,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="629" Padding="27,2,0,0" MaxLength="15" Grid.ColumnSpan="2"/>
+        <Button x:Name="Cancelar_book_btn_ADM" Content="Cancelar" HorizontalAlignment="Left" Margin="344,422,0,0" VerticalAlignment="Top" Width="122" Height="34"/>
+
+
+
+
+
+    </Grid>
+</Window>
