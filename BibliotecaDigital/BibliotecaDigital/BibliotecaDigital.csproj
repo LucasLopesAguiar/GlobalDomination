@@ -54,11 +54,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="New_User_ADM.xaml.cs">
+      <DependentUpon>New_User_ADM.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Telas_Internas\SystemLayoutAdmin.xaml.cs">
       <DependentUpon>SystemLayoutAdmin.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Telas_Internas\SystemLayoutAdmin_NewUser.xaml.cs">
-      <DependentUpon>SystemLayoutAdmin_NewUser.xaml</DependentUpon>
     </Compile>
     <Page Include="help.xaml">
       <SubType>Designer</SubType>
@@ -83,11 +83,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Telas_Internas\SystemLayoutAdmin.xaml">
+    <Page Include="New_User_ADM.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Telas_Internas\SystemLayoutAdmin_NewUser.xaml">
+    <Page Include="Telas_Internas\SystemLayoutAdmin.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

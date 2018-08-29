@@ -24,7 +24,7 @@
 
                 <MenuItem Header="Novo" Width="60" Height="27">
                     <!-- Primeiro Menu -->
-                    <MenuItem Header="Usuário">
+                    <MenuItem Header="Usuário" Click="MenuItem_Click">
                         <MenuItem.Icon>
                             <Image Source="/BibliotecaDigital;component/Icons/add_user.png"/>
                         </MenuItem.Icon>

@@ -12,14 +12,14 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace BibliotecaDigital.Telas_Internas
+namespace BibliotecaDigital
 {
     /// <summary>
-    /// Lógica interna para SystemLayoutAdmin_NewUser.xaml
+    /// Lógica interna para New_User_ADM.xaml
     /// </summary>
-    public partial class SystemLayoutAdmin_NewUser : Window
+    public partial class New_User_ADM : Window
     {
-        public SystemLayoutAdmin_NewUser()
+        public New_User_ADM()
         {
             InitializeComponent();
         }
