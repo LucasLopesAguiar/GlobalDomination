@@ -13,7 +13,7 @@
             <ColumnDefinition Width="495*"/>
             <ColumnDefinition Width="199*"/>
         </Grid.ColumnDefinitions>
-        <Label x:Name="title_New_Book_ADM" Content="Novo Livro" HorizontalAlignment="Left" Margin="285,10,0,0" VerticalAlignment="Top" FontSize="22" FontWeight="Bold" FontFamily="Arial Black"/>
+        <Label x:Name="title_New_Book_ADM" Content="Cadastro de Livro" HorizontalAlignment="Left" Margin="233,1,0,0" VerticalAlignment="Top" FontSize="22" FontWeight="Bold" FontFamily="Arial Black" Height="35" Width="233"/>
 
         <Label x:Name="Nome_Book_ADM_Label" Content="Título:" HorizontalAlignment="Left" Margin="10,67,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="Nome_Book_ADM_Text" HorizontalAlignment="Left" Height="23" Margin="11,98,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="629" Padding="27,2,0,0" Grid.ColumnSpan="2" />
@@ -72,7 +72,8 @@
         <Image Source="/BibliotecaDigital;component/Icons/cadastra_livro.png" HorizontalAlignment="Left" Height="21" Margin="11,366,0,0" VerticalAlignment="Top" Width="21" RenderTransformOrigin="1.189,0.554"/>
         <Button x:Name="Cancelar_book_btn_ADM" Content="Cancelar" HorizontalAlignment="Left" Margin="384,422,0,0" VerticalAlignment="Top" Width="122" Height="34" Grid.ColumnSpan="2"/>
         <CheckBox Content="Disponível" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1" Margin="77,67,0,0"/>
-
+        <Image HorizontalAlignment="Left" Height="58" Margin="304,36,0,0" VerticalAlignment="Top" Width="68"
+               Source="/BibliotecaDigital;component/Icons/Novo_Livro_Adm.png"/>
 
 
 

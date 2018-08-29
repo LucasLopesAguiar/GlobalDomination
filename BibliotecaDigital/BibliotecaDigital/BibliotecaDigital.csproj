@@ -183,5 +183,11 @@
   <ItemGroup>
     <Resource Include="Icons\cadastra_livro.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\Novo_Livro_Adm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\Logout_buttonn.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

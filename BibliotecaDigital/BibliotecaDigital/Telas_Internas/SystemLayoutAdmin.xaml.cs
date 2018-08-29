@@ -55,6 +55,16 @@ namespace BibliotecaDigital.Telas_Internas
             New_Book_ADM tela_Adm_BookNew = new New_Book_ADM();
             tela_Adm_BookNew.ShowDialog();
         }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            
+            //Escondo a tela e não mato processo
+        
+            //this.Hide();
+            MainWindow tela_Adm_logout = new MainWindow();
+            tela_Adm_logout.ShowDialog();
+        }
     }
     }
 
