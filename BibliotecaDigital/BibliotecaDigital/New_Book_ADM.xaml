@@ -24,7 +24,7 @@
         <Label x:Name="Autor_Book_ADM_Label" Content="Autor:" HorizontalAlignment="Left" Margin="11,189,0,0" VerticalAlignment="Top" Width="49"/>
 
 
-        <Button x:Name="Adicionar_book_user_btn_ADM" Content="Adicionar" HorizontalAlignment="Left" Margin="195,422,0,0" VerticalAlignment="Top" Width="122" Height="34"/>
+        <Button  x:Name="Adicionar_book_user_btn_ADM" Content="Adicionar" HorizontalAlignment="Left" Margin="195,422,0,0" VerticalAlignment="Top" Width="122" Height="34" />
         <TextBox x:Name="Editora_Book_ADM_Text" HorizontalAlignment="Left" Height="23" Margin="11,161,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="375" Padding="27,2,0,0" />
         <Image Source="/BibliotecaDigital;component/Icons/cadastra_livro.png" HorizontalAlignment="Left" Height="23" Margin="11,161,0,0" VerticalAlignment="Top" Width="21" RenderTransformOrigin="1.189,0.554"/>
         <TextBox x:Name="Autor_Book_ADM_Text" HorizontalAlignment="Left" Height="23" Margin="11,220,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="375" Padding="27,2,0,0" />

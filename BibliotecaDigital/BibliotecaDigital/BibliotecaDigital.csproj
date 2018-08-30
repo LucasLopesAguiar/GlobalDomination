@@ -60,6 +60,9 @@
     <Compile Include="New_User_ADM.xaml.cs">
       <DependentUpon>New_User_ADM.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Novo_Emprestimo_ADM.xaml.cs">
+      <DependentUpon>Novo_Emprestimo_ADM.xaml</DependentUpon>
+    </Compile>
     <Compile Include="SobreSistema.xaml.cs">
       <DependentUpon>SobreSistema.xaml</DependentUpon>
     </Compile>
@@ -94,6 +97,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="New_User_ADM.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Novo_Emprestimo_ADM.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
