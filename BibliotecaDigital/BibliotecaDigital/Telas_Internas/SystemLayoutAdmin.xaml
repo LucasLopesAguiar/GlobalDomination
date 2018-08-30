@@ -20,10 +20,10 @@
         WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="481*"/>
-            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
         </Grid.ColumnDefinitions>
-        <DockPanel Height="27" VerticalAlignment="Top" Grid.ColumnSpan="2">
+        <DockPanel Height="27" VerticalAlignment="Top">
             <Menu DockPanel.Dock="Top">
 
                 <MenuItem Header="Novo" Width="60" Height="27">
@@ -81,36 +81,17 @@
                         </MenuItem.Icon>
                     </MenuItem>
                 </MenuItem>
-
+                <MenuItem x:Name="logout" Header="Sair" Width="53" Height="27" VerticalContentAlignment="Center" Margin="515,0,0,0" Click="logout_Click">
+                    <MenuItem.Icon>
+                        <Image Source="/BibliotecaDigital;component/Icons/Logout_buttonn.png"/>
+                    </MenuItem.Icon>
+                </MenuItem>
             </Menu>
 
 
 
         </DockPanel>
-        <Button ToolTip="Adicionar usuário" HorizontalAlignment="Left" Margin="0,25,0,0" VerticalAlignment="Top" Width="57" Height="52" Click="Button_Click">
-            <Image Source="/BibliotecaDigital;component/Icons/add_user_button.png" Height="42"/>
-        </Button>
-        <Button ToolTip="Adicionar Livro"  HorizontalAlignment="Left" Margin="58,25,0,0" VerticalAlignment="Top" Width="57" Height="52" Click="Button_Click_1">
-            <Image Source="/BibliotecaDigital;component/Icons/add_livro_button.png" Height="42"/>
-        </Button>
-        <Button ToolTip="Editar Usuário"  HorizontalAlignment="Left" Margin="116,25,0,0" VerticalAlignment="Top" Width="57" Height="52">
-            <Image Source="/BibliotecaDigital;component/Icons/edit_user_button.png" Height="42"/>
-        </Button>
-        <Button ToolTip="Editar Livro"  HorizontalAlignment="Left" Margin="174,25,0,0" VerticalAlignment="Top" Width="57" Height="52">
-            <Image Source="/BibliotecaDigital;component/Icons/edit_livro.png" Height="42"/>
-        </Button>
-        <Button ToolTip="Novo Emprestimo"  HorizontalAlignment="Left" Margin="232,25,0,0" VerticalAlignment="Top" Width="57" Height="52">
-            <Image Source="/BibliotecaDigital;component/Icons/add_emprestimo_button.png" Height="42"/>
-        </Button>
-        <Button ToolTip="Consultar Empréstimo (Data)"  HorizontalAlignment="Left" Margin="290,25,0,0" VerticalAlignment="Top" Width="57" Height="52">
-            <Image Source="/BibliotecaDigital;component/Icons/consulta_data_button.png" Height="42"/>
-        </Button>
-        <Button ToolTip="Consultar Empréstimo (Usuário)"  HorizontalAlignment="Left" Margin="348,25,0,0" VerticalAlignment="Top" Width="57" Height="52">
-            <Image Source="/BibliotecaDigital;component/Icons/consulta_usuario_button.png" Height="42"/>
-        </Button>
-        <Button ToolTip="Sair"  HorizontalAlignment="Left" Margin="406,25,0,0" VerticalAlignment="Top" Width="57" Height="52" Click="Button_Click_2">
-            <Image Source="/BibliotecaDigital;component/Icons/Logout_buttonn.png" Height="42"/>
-        </Button>
+
 
     </Grid>
 </Window>

@@ -15,13 +15,14 @@ using System.Windows.Shapes;
 namespace BibliotecaDigital
 {
     /// <summary>
-    /// Lógica interna para help.xaml
+    /// Lógica interna para sobreSistema.xaml
     /// </summary>
-    public partial class help : Window
+    public partial class sobreSistema : Window
     {
-        public help()
+        public sobreSistema()
         {
             InitializeComponent();
         }
+
     }
 }
