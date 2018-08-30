@@ -54,6 +54,18 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="New_Book_ADM.xaml.cs">
+      <DependentUpon>New_Book_ADM.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="New_User_ADM.xaml.cs">
+      <DependentUpon>New_User_ADM.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Novo_Emprestimo_ADM.xaml.cs">
+      <DependentUpon>Novo_Emprestimo_ADM.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SobreSistema.xaml.cs">
+      <DependentUpon>SobreSistema.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Telas_Internas\SystemLayoutAdmin.xaml.cs">
       <DependentUpon>SystemLayoutAdmin.xaml</DependentUpon>
     </Compile>
@@ -76,7 +88,23 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="New_Book_ADM.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="new_user.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="New_User_ADM.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Novo_Emprestimo_ADM.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SobreSistema.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -141,6 +169,32 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Icons\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\add_emprestimo_button.png" />
+    <Resource Include="Icons\add_user_button.png" />
+    <Resource Include="Icons\consulta_data_button.png" />
+    <Resource Include="Icons\consulta_usuario_button.png" />
+    <Resource Include="Icons\edit_livro_button.png" />
+    <Resource Include="Icons\edit_user_button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\add_livro_button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\sobre_sistema.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\Library_sobre.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\cadastra_livro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\Novo_Livro_Adm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\Logout_buttonn.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
