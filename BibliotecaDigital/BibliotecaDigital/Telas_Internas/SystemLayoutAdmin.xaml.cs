@@ -64,12 +64,14 @@ namespace BibliotecaDigital.Telas_Internas
         //Button Logout
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            
+
             //Escondo a tela e não mato processo
-        
-            //this.Hide();
+            this.Hide();
             MainWindow tela_Adm_logout = new MainWindow();
             tela_Adm_logout.ShowDialog();
+
+            //Fecho a tela e mato o processo
+            this.Close();
         }
     }
     }
