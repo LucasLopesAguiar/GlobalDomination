@@ -61,3 +61,40 @@ StartupUri="MainWindow.xaml"
 
 Login de usuario apenas com 15 caracters
 Senha de usuario apenas com 15 caracters
+
+
+Adicionei as seguintes classes para os livros
+
+ – Generalidades 
+ – Filosofia. Psicologia 
+ – Religião 
+ – Ciências Sociais 
+ – Linguagem 
+ – Ciências Naturais. Matemática 
+ – Tecnologia 
+ – Artes 
+ – Literatura 
+ – Geografia. História 
+ 
+ 
+ As seguintes categorias.
+ 
+ 
+    Biografias
+    Coleções
+    Comportamento
+    Contos
+    Crítica Literária
+    Ficção Científica
+    Folclore
+    Genealogia
+    Humor
+    Infantojuvenis
+    Jogos
+    Jornais
+    Literatura Brasileira
+    Literatura Estrangeira
+    Livros Raros
+    Manuscritos
+    Poesia
+    Outros Assuntos
