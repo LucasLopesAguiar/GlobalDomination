@@ -5,8 +5,45 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BibliotecaDigital"
         mc:Ignorable="d"
-        Title="Novo_Emprestimo_ADM" Height="533.444" Width="1139.735">
+        Title="Novo_Emprestimo_ADM" Height="584.664" Width="1139.735">
     <Grid>
+        <Label x:Name="Titulo_Tela" Content="Empréstimo" HorizontalAlignment="Left" Margin="460,30,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="36"/>
+        <Label Content="Nome do Livro" HorizontalAlignment="Left" Margin="87,128,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="16" RenderTransformOrigin="0.189,-0.177"/>
+        <TextBox x:Name="Nome_Livro_Emprestado" HorizontalAlignment="Left" Height="35" Margin="87,161,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="619"/>
+        <Label x:Name="Categoria_Book_emprestimo" Content="Categoria:" HorizontalAlignment="Left" Margin="753,128,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.01,0.105" FontSize="16" FontFamily="Arial"/>
+        <ComboBox HorizontalAlignment="Left" Margin="753,161,0,0" VerticalAlignment="Top" Width="321" Height="35">
+            <ComboBoxItem Content="Biografias"/>
+            <ComboBoxItem Content="Folclore"/>
+            <ComboBoxItem Content="Literatura Brasileira"/>
+            <ComboBoxItem Content="Coleções"/>
+            <ComboBoxItem Content="Genealogia"/>
+            <ComboBoxItem Content="Literatura Estrangeira"/>
+            <ComboBoxItem Content="Comportamento"/>
+            <ComboBoxItem Content="Humor"/>
+            <ComboBoxItem Content="Livros Raros"/>
+            <ComboBoxItem Content="Contos"/>
+            <ComboBoxItem Content="Infantojuvenis"/>
+            <ComboBoxItem Content="Manuscritos"/>
+            <ComboBoxItem Content="Poesia"/>
+            <ComboBoxItem Content="Ficção Científica"/>
+            <ComboBoxItem Content="Jornais"/>
+            <ComboBoxItem Content="Outros Assuntos"/>
+        </ComboBox>
+        <Label x:Name="Classe_Book_ADM_Label" Content="Acervo:" HorizontalAlignment="Left" Margin="753,203,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.192,-2.903" FontFamily="Arial" FontSize="16"/>
+        <ComboBox HorizontalAlignment="Left" Margin="753,244,0,0" VerticalAlignment="Top" Width="321" Height="35">
+            <ComboBoxItem Content="Generalidades"/>
+            <ComboBoxItem Content=" Filosofia. Psicologia"/>
+            <ComboBoxItem Content="Religião"/>
+            <ComboBoxItem Content="Ciências Sociais "/>
+            <ComboBoxItem Content="Linguagem"/>
+            <ComboBoxItem Content="Ciências Naturais. Matemática "/>
+            <ComboBoxItem Content="Tecnologia "/>
+            <ComboBoxItem Content="Artes"/>
+            <ComboBoxItem Content="Literatura "/>
+            <ComboBoxItem Content="Geografia. História"/>
+        </ComboBox>
+        <TextBox x:Name="Nome_usuário_" HorizontalAlignment="Left" Height="35" Margin="87,244,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="619"/>
+        <Label Content="Nome do Usuário" HorizontalAlignment="Left" Margin="87,201,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="16" RenderTransformOrigin="0.189,-0.177"/>
 
     </Grid>
 </Window>
