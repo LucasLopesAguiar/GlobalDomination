@@ -19,7 +19,7 @@
         </Label>
         <Label Content="Matrícula do Usuário" HorizontalAlignment="Left" Margin="60,79,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.065,-0.156" Width="150" FontSize="14" FontFamily="Arial"/>
         <TextBox HorizontalAlignment="Left" Height="31" TextWrapping="Wrap" VerticalAlignment="Top" Width="225" Margin="60,110,0,0" Cursor="None" FontFamily="Arial"/>
-        <DataGrid AutoGenerateColumns="True" HorizontalAlignment="Left" Height="221" Margin="60,156,0,0" VerticalAlignment="Top" Width="571"/>
+        <DataGrid x:Name="Lista_User" AutoGenerateColumns="True" HorizontalAlignment="Left" Height="221" Margin="60,156,0,0" VerticalAlignment="Top" Width="571"/>
         <Button x:Name="Button_Alter" HorizontalAlignment="Left" Margin="650,300,0,0" VerticalAlignment="Top" Width="118" Height="46">
             <DockPanel>
                 <Label HorizontalContentAlignment="Left"
