@@ -107,3 +107,6 @@ Adicionei as seguintes classes para os livros
     Manuscritos
     Poesia
     Outros Assuntos
+    
+   --Ultima alteração
+   Foi a tela de edição de usuário, irei avaliar a possibilidade de colocar ela em aba.
