@@ -1,4 +1,4 @@
-# Biblioteca Digital
+﻿# Biblioteca Digital
 Projeto de sistema feito para a matéria de C#
 
 Sobre:		
@@ -30,6 +30,7 @@ Tabelas:
 
 Usuário: user_tb    
 id_user
+nome_user
 login
 pass
 type_user(bool)
@@ -37,15 +38,23 @@ type_user(bool)
 Livros: livros_tb   
 id_livro
 titulo
+editora
+categoria
+autor
+qtd_pag
+acervo
+ano
+descricao
 quantidade
+consulta_local
 disponivel(bool)
     
 Emprestimos:  emprestimos_tb        
 id_emprestimo
-user
-livro
-emprestado (data)
-devolucao (data)
+id_user
+id_livro
+emprestado (data_inicial)
+devolucao (data_final)
 
 =-=-=-=-=-=-=-=-=-=-=-=-=-=         
 Equipe:   

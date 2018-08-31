@@ -36,7 +36,7 @@ namespace BibliotecaDigital.Telas_Internas
         //SubItem sobre o sistema 
         private void MenuItem_Click_1(object sender, RoutedEventArgs e)
         {
-            SobreSistema tela_Adm_Sobre = new SobreSistema();
+            sobreSistema tela_Adm_Sobre = new sobreSistema();
             tela_Adm_Sobre.ShowDialog();
         }
 
@@ -46,25 +46,9 @@ namespace BibliotecaDigital.Telas_Internas
             New_Book_ADM tela_Adm_bookNew = new New_Book_ADM();
             tela_Adm_bookNew.ShowDialog();
         }
-
-        //botão para adicionar usuário
-        private void Button_Click(object sender, RoutedEventArgs e)
+        
+        private void logout_Click(object sender, RoutedEventArgs e)
         {
-            New_User_ADM tela_Adm_usernew = new New_User_ADM();
-            tela_Adm_usernew.ShowDialog();
-        }
-
-        //Botão que adiciona livro
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-            New_Book_ADM tela_Adm_BookNew = new New_Book_ADM();
-            tela_Adm_BookNew.ShowDialog();
-        }
-
-        //Button Logout
-        private void Button_Click_2(object sender, RoutedEventArgs e)
-        {
-
             //Escondo a tela e não mato processo
             this.Hide();
             MainWindow tela_Adm_logout = new MainWindow();

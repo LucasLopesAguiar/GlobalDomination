@@ -27,7 +27,7 @@ namespace BibliotecaDigital
 
         private void help_btn_Click(object sender, RoutedEventArgs e)
         {
-            help window = new help();
+            sobreSistema window = new sobreSistema();
             window.ShowDialog();
         }
 
