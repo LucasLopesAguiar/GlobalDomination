@@ -199,5 +199,8 @@
     <Resource Include="Icons\edicao_tela_ediçao.png" />
     <Resource Include="Icons\Excluir_tela_ediçao.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\IconeEdit.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

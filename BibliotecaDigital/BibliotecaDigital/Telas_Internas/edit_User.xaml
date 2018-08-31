@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="edit_User" Height="450" Width="800">
     <Grid>
-        <Label Content="Editar Usuário" Margin="286,12,295,0" VerticalAlignment="Top" FontSize="22" FontFamily="Arial Black" RenderTransformOrigin="0.5,0.5">
+        <Label Content="Editar Usuário" Margin="296,31,284,0" VerticalAlignment="Top" FontSize="22" FontFamily="Arial Black" RenderTransformOrigin="0.5,0.5">
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -50,6 +50,7 @@
 
 
         </Button>
+        <Image Source="/BibliotecaDigital;component/Icons/IconeEdit.png" HorizontalAlignment="Left" Height="55" Margin="494,10,0,0" VerticalAlignment="Top" Width="72" RenderTransformOrigin="0.562,0.464"/>
 
     </Grid>
 </Window>
