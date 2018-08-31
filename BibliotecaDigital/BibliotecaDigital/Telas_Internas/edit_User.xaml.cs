@@ -23,5 +23,11 @@ namespace BibliotecaDigital.Telas_Internas
         {
             InitializeComponent();
         }
+
+        private void Button_new_User_Click(object sender, RoutedEventArgs e)
+        {
+            New_User_ADM AdicionaUserWinEdit = new New_User_ADM();
+            AdicionaUserWinEdit.ShowDialog();
+        }
     }
 }

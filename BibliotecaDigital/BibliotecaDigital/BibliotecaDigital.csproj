@@ -194,5 +194,10 @@
   <ItemGroup>
     <Resource Include="Icons\Logout_buttonn.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\Adicionar_tela_ediçao.png" />
+    <Resource Include="Icons\edicao_tela_ediçao.png" />
+    <Resource Include="Icons\Excluir_tela_ediçao.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
