@@ -75,6 +75,12 @@ namespace BibliotecaDigital.Telas_Internas
             Novo_Emprestimo_ADM AdicionaNovoEmprestimoWinEmpres = new Novo_Emprestimo_ADM();
             AdicionaNovoEmprestimoWinEmpres.ShowDialog();
         }
+
+        private void MenuItem_Click_3(object sender, RoutedEventArgs e)
+        {
+            consulta_Data Consulta_por_data_win = new consulta_Data();
+            Consulta_por_data_win.ShowDialog();
+        }
     }
     }
 

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BibliotecaDigital"
         mc:Ignorable="d"
-        Title="Cadastrar" Height="383.905" Width="537.476"
+        Title="Cadastrar Usuário" Height="383.905" Width="537.476"
         Icon="/BibliotecaDigital;component/Icons/main_icon.png"
         WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
     <Grid>
