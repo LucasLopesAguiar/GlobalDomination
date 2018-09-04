@@ -58,6 +58,9 @@
     <Compile Include="Telas_Internas\consulta_Data.xaml.cs">
       <DependentUpon>consulta_Data.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Telas_Internas\consulta_usuario.xaml.cs">
+      <DependentUpon>consulta_usuario.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Telas_Internas\edit_Book.xaml.cs">
       <DependentUpon>edit_Book.xaml</DependentUpon>
     </Compile>
@@ -89,6 +92,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Telas_Internas\consulta_Data.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Telas_Internas\consulta_usuario.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -81,6 +81,12 @@ namespace BibliotecaDigital.Telas_Internas
             consulta_Data Consulta_por_data_win = new consulta_Data();
             Consulta_por_data_win.ShowDialog();
         }
+
+        private void Consulta_usuário_emp_Click(object sender, RoutedEventArgs e)
+        {
+            consulta_usuario Consulta_por_usuario_win = new consulta_usuario();
+            Consulta_por_usuario_win.ShowDialog();
+        }
     }
     }
 

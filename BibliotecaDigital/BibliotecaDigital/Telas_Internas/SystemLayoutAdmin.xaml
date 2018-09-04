@@ -67,7 +67,7 @@
                             <Image Source="/BibliotecaDigital;component/Icons/consulta_data.png"/>
                         </MenuItem.Icon>
                     </MenuItem>
-                    <MenuItem Header="Consultar (por Usuário)">
+                    <MenuItem x:Name="Consulta_usuário_emp" Header="Consultar (por Usuário)" Click="Consulta_usuário_emp_Click">
                         <MenuItem.Icon>
                             <Image Source="/BibliotecaDigital;component/Icons/consulta_usuario.png"/>
                         </MenuItem.Icon>
