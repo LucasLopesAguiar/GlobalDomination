@@ -57,7 +57,7 @@
 
                 <MenuItem Header="Emprestimos" Width="89" Height="27">
                     <!-- Terceiro Menu -->
-                    <MenuItem Header="Novo">
+                    <MenuItem x:Name="Novo_emprestimoow" Header="Novo" Click="Novo_emprestimoow_Click">
                         <MenuItem.Icon>
                             <Image Source="/BibliotecaDigital;component/Icons/add_emprestimo.png"/>
                         </MenuItem.Icon>

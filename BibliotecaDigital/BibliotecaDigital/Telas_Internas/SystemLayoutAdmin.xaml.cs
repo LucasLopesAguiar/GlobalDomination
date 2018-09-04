@@ -69,6 +69,12 @@ namespace BibliotecaDigital.Telas_Internas
             edit_Book EdicaoLivro = new edit_Book();
             EdicaoLivro.ShowDialog();
         }
+
+        private void Novo_emprestimoow_Click(object sender, RoutedEventArgs e)
+        {
+            Novo_Emprestimo_ADM AdicionaNovoEmprestimoWinEmpres = new Novo_Emprestimo_ADM();
+            AdicionaNovoEmprestimoWinEmpres.ShowDialog();
+        }
     }
     }
 
