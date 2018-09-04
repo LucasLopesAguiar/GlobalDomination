@@ -57,6 +57,18 @@ namespace BibliotecaDigital.Telas_Internas
             //Fecho a tela e mato o processo
             this.Close();
         }
+
+        private void EditaUser_Click(object sender, RoutedEventArgs e)
+        {
+            edit_User EdicaoUsuario = new edit_User();
+            EdicaoUsuario.ShowDialog();
+        }
+
+        private void EditaLivro_Click(object sender, RoutedEventArgs e)
+        {
+            edit_Book EdicaoLivro = new edit_Book();
+            EdicaoLivro.ShowDialog();
+        }
     }
     }
 

@@ -55,6 +55,9 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="sobreSistema.cs" />
+    <Compile Include="Telas_Internas\edit_Book.xaml.cs">
+      <DependentUpon>edit_Book.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Telas_Internas\edit_User.xaml.cs">
       <DependentUpon>edit_User.xaml</DependentUpon>
     </Compile>
@@ -82,6 +85,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Telas_Internas\edit_Book.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Telas_Internas\edit_User.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

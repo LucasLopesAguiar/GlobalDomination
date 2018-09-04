@@ -42,12 +42,12 @@
 
                 <MenuItem Header="Editar" Width="60" Height="27">
                     <!-- Segundo Menu -->
-                    <MenuItem Header="Usuário">
+                    <MenuItem x:Name="EditaUser" Header="Usuário" Click="EditaUser_Click">
                         <MenuItem.Icon>
                             <Image Source="/BibliotecaDigital;component/Icons/edit_user.png"/>
                         </MenuItem.Icon>
                     </MenuItem>
-                    <MenuItem Header="Livro">
+                    <MenuItem x:Name="EditaLivro" Header="Livro" Click="EditaLivro_Click">
                         <MenuItem.Icon>
                             <Image Source="/BibliotecaDigital;component/Icons/edit_livro.png"/>
                         </MenuItem.Icon>
