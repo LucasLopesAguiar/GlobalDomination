@@ -29,32 +29,35 @@ https://www.iconfinder.com/iconsets/office-222
 Tabelas:    
 
 Usuário: user_tb    
-id_user
-nome_user
-login
-pass
-type_user(bool)
+id_user;
+nome_user;
+login;
+pass;
+type_user(bool);
     
-Livros: livros_tb   
-id_livro
-titulo
-editora
-categoria
-autor
-qtd_pag
-acervo
-ano
-descricao
-quantidade
-consulta_local
+Livros: livros_tb;   
+id_livro;
+titulo;
+editora;
+categoria;
+autor;
+qtd_pag;
+acervo;
+ano;
+descricao;
+quantidade;
+consulta_local*;
 disponivel(bool)
     
 Emprestimos:  emprestimos_tb        
-id_emprestimo
-id_user
-id_livro
-emprestado (data_inicial)
-devolucao (data_final)
+id_emprestimo;
+id_user;
+id_livro;
+emprestado (data_inicial);
+devolucao (data_final);
+
+
+* é incerto
 
 =-=-=-=-=-=-=-=-=-=-=-=-=-=         
 Equipe:   
