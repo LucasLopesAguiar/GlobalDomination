@@ -3,8 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:BibliotecaDigital"
              
-             StartupUri="Telas_Internas/SystemLayoutAdmin.xaml"           
+             StartupUri="MainWindow.xaml"           
              >
+    <!-- StartupUri="Telas_Internas/SystemLayoutAdmin.xaml" -->
     <Application.Resources>
          
     </Application.Resources>
