@@ -34,7 +34,7 @@
             <DockPanel>
                 <Label HorizontalContentAlignment="Left"
                     DockPanel.Dock="Bottom"
-                    Content =" Editar" Height="24" />
+                    Content ="Excluir" Height="24" />
                 <Image Source="/BibliotecaDigital;component/Icons/Excluir_tela_ediçao.png" VerticalAlignment="Center" />
             </DockPanel>
 
