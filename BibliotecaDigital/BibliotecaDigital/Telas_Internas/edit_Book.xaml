@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BibliotecaDigital.Telas_Internas"
         mc:Ignorable="d"
-        Title="Edição de Livro" Height="450" Width="800">
+        Title="Edição de Livro" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
     <Grid>
         <Label Content="Editar Livro" Margin="296,31,284,0" VerticalAlignment="Top" FontSize="22" FontFamily="Arial Black" RenderTransformOrigin="0.5,0.5">
             <Label.RenderTransform>
