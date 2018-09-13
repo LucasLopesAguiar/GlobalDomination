@@ -10,9 +10,9 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <DatePicker HorizontalAlignment="Left" Margin="66,87,0,0" VerticalAlignment="Top" Height="30" Width="144" FontFamily="Arial"/>
+        <DatePicker HorizontalAlignment="Left" Margin="230,82,0,0" VerticalAlignment="Top" Height="30" Width="144" FontFamily="Arial"/>
         <Label Content="Informe um período de busca" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="66,39,0,0" FontFamily="Arial" FontSize="14"/>
-        <DatePicker HorizontalAlignment="Left" Margin="230,87,0,0" VerticalAlignment="Top" Height="30" Width="144" FontFamily="Arial"/>
+        <DatePicker HorizontalAlignment="Left" Margin="66,82,0,0" VerticalAlignment="Top" Height="30" Width="144" FontFamily="Arial"/>
         <Label Content="-" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="210,86,0,0"/>
         <Button x:Name="Adiciona_Arquivo_DataCon" HorizontalAlignment="Left" Margin="601,86,0,0" VerticalAlignment="Top" Width="118" Height="46">
             <DockPanel>
