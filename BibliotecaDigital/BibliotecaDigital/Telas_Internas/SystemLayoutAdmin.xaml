@@ -42,12 +42,12 @@
 
                 <MenuItem Header="Editar" Width="60" Height="27">
                     <!-- Segundo Menu -->
-                    <MenuItem Header="Usuário">
+                    <MenuItem x:Name="EditaUser" Header="Usuário" Click="EditaUser_Click">
                         <MenuItem.Icon>
                             <Image Source="/BibliotecaDigital;component/Icons/edit_user.png"/>
                         </MenuItem.Icon>
                     </MenuItem>
-                    <MenuItem Header="Livro">
+                    <MenuItem x:Name="EditaLivro" Header="Livro" Click="EditaLivro_Click">
                         <MenuItem.Icon>
                             <Image Source="/BibliotecaDigital;component/Icons/edit_livro.png"/>
                         </MenuItem.Icon>
@@ -57,17 +57,17 @@
 
                 <MenuItem Header="Emprestimos" Width="89" Height="27">
                     <!-- Terceiro Menu -->
-                    <MenuItem Header="Novo">
+                    <MenuItem x:Name="Novo_emprestimoow" Header="Novo" Click="Novo_emprestimoow_Click">
                         <MenuItem.Icon>
                             <Image Source="/BibliotecaDigital;component/Icons/add_emprestimo.png"/>
                         </MenuItem.Icon>
                     </MenuItem>
-                    <MenuItem Header="Consultar (por Data)">
+                    <MenuItem Header="Consultar (por Data)" Click="MenuItem_Click_3">
                         <MenuItem.Icon>
                             <Image Source="/BibliotecaDigital;component/Icons/consulta_data.png"/>
                         </MenuItem.Icon>
                     </MenuItem>
-                    <MenuItem Header="Consultar (por Usuário)">
+                    <MenuItem x:Name="Consulta_usuário_emp" Header="Consultar (por Usuário)" Click="Consulta_usuário_emp_Click">
                         <MenuItem.Icon>
                             <Image Source="/BibliotecaDigital;component/Icons/consulta_usuario.png"/>
                         </MenuItem.Icon>

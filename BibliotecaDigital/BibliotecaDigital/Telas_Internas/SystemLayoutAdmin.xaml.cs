@@ -57,6 +57,40 @@ namespace BibliotecaDigital.Telas_Internas
             //Fecho a tela e mato o processo
             this.Close();
         }
+
+        //Chama tela de edição de usuário
+        private void EditaUser_Click(object sender, RoutedEventArgs e)
+        {
+            edit_User EdicaoUsuario = new edit_User();
+            EdicaoUsuario.ShowDialog();
+        }
+
+        //Chama tela de edição de livro
+        private void EditaLivro_Click(object sender, RoutedEventArgs e)
+        {
+            edit_Book EdicaoLivro = new edit_Book();
+            EdicaoLivro.ShowDialog();
+        }
+
+        //Chama tela de emprestimo
+        private void Novo_emprestimoow_Click(object sender, RoutedEventArgs e)
+        {
+            Novo_Emprestimo_ADM AdicionaNovoEmprestimoWinEmpres = new Novo_Emprestimo_ADM();
+            AdicionaNovoEmprestimoWinEmpres.ShowDialog();
+        }
+        //Chama tela de consulta por data 
+        private void MenuItem_Click_3(object sender, RoutedEventArgs e)
+        {
+            consulta_Data Consulta_por_data_win = new consulta_Data();
+            Consulta_por_data_win.ShowDialog();
+        }
+
+        //chama tela de consulta por usuário
+        private void Consulta_usuário_emp_Click(object sender, RoutedEventArgs e)
+        {
+            consulta_usuario Consulta_por_usuario_win = new consulta_usuario();
+            Consulta_por_usuario_win.ShowDialog();
+        }
     }
     }
 

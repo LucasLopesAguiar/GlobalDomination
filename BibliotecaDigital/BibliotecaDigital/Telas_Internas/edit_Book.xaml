@@ -1,0 +1,56 @@
+﻿<Window x:Class="BibliotecaDigital.Telas_Internas.edit_Book"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BibliotecaDigital.Telas_Internas"
+        mc:Ignorable="d"
+        Title="Edição de Livro" Height="450" Width="800">
+    <Grid>
+        <Label Content="Editar Livro" Margin="296,31,284,0" VerticalAlignment="Top" FontSize="22" FontFamily="Arial Black" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.368"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label Content="Número do Livro" HorizontalAlignment="Left" Margin="60,79,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.065,-0.156" Width="150" FontSize="14" FontFamily="Arial"/>
+        <TextBox x:Name="cod_do_livro" HorizontalAlignment="Left" Height="31" Margin="60,110,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="287" Padding="7,7,0,0"/>
+        <DataGrid x:Name="Lista_User" AutoGenerateColumns="True" HorizontalAlignment="Left" Height="221" Margin="60,156,0,0" VerticalAlignment="Top" Width="571"/>
+        <Button x:Name="Button_Alter_book" HorizontalAlignment="Left" Margin="650,300,0,0" VerticalAlignment="Top" Width="118" Height="46" Click="Button_Alter_book_Click">
+            <DockPanel>
+                <Label HorizontalContentAlignment="Left"
+                    DockPanel.Dock="Bottom"
+                    Content =" Editar" Height="24" />
+                <Image Source="/BibliotecaDigital;component/Icons/edit_livro.png" VerticalAlignment="Center" />
+            </DockPanel>
+
+
+        </Button>
+        <Button x:Name="Button_delete_book" HorizontalAlignment="Left" Margin="650,236,0,0" VerticalAlignment="Top" Width="118" Height="46">
+            <DockPanel>
+                <Label HorizontalContentAlignment="Left"
+                    DockPanel.Dock="Bottom"
+                    Content =" Editar" Height="24" />
+                <Image Source="/BibliotecaDigital;component/Icons/Excluir_tela_ediçao.png" VerticalAlignment="Center" />
+            </DockPanel>
+
+
+        </Button>
+        <Button x:Name="Button_new_book"   HorizontalAlignment="Left" Margin="650,172,0,0" VerticalAlignment="Top" Width="118" Height="46" Click="Button_new_User_Click">
+            <DockPanel>
+                <Label HorizontalContentAlignment="Left"
+                    DockPanel.Dock="Bottom"
+                    Content ="Novo Livro" Height="24" />
+                <Image Source="/BibliotecaDigital;component/Icons/add_livro.png" VerticalAlignment="Center" />
+            </DockPanel>
+
+
+        </Button>
+        <Image Source="/BibliotecaDigital;component/Icons/Novo_Livro_Adm.png" HorizontalAlignment="Left" Height="60" Margin="494,10,0,0" VerticalAlignment="Top" Width="81" RenderTransformOrigin="0.562,0.464"/>
+
+    </Grid>
+</Window>
