@@ -17,8 +17,8 @@
 
         <Label Content="Nome do Livro" HorizontalAlignment="Left" Margin="84,211,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="16" RenderTransformOrigin="0.189,-0.177"/>
         <TextBox x:Name="Nome_Livro_Emprestado" HorizontalAlignment="Left" Height="35" Margin="86,240,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="619" IsReadOnly="True" Background="#FFE0E0E0" Padding="7,8,0,0"/>
-        
-        <TextBox x:Name="Nome_usuário_" HorizontalAlignment="Left" Height="35" Margin="88,379,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="619" Padding="4,7,0,0"/>
+
+        <TextBox x:Name="Nome_usuário_" HorizontalAlignment="Left" Height="35" Margin="88,379,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"  IsReadOnly="True" Background="#FFE0E0E0" Width="619" Padding="4,7,0,0"/>
         <Label Content="Nome do Usuário" HorizontalAlignment="Left" Margin="84,355,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="16" RenderTransformOrigin="0.189,-0.177"/>
         <Label Content="Período de empréstimo" HorizontalAlignment="Left" Margin="87,420,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="16" RenderTransformOrigin="0.189,-0.177"/>
 
@@ -28,6 +28,7 @@
         <TextBox x:Name="Matrícula_text" HorizontalAlignment="Left" Height="35" Margin="91,314,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="231" Padding="6,7,0,0"/>
 
         <Label Content="Data Inicial" HorizontalAlignment="Left" Margin="87,450,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <!--Implementar currentdate no banco, buscar data atual do sistema-->
         <TextBox HorizontalAlignment="Left" Margin="91,479,0,0" VerticalAlignment="Top" Height="30" Width="173" IsReadOnly="True" Padding="3,5,2,2"></TextBox>
 
         <Label Content="Data de Entrega" HorizontalAlignment="Left" Margin="285,450,0,0" VerticalAlignment="Top" FontSize="14"/>
