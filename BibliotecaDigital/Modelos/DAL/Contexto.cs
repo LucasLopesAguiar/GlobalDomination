@@ -7,11 +7,15 @@ using System.Threading.Tasks;
 
 namespace Modelos.DAL
 {
-    public class Contexto : DbContext
+    public partial class Contexto : DbContext
     {
         public Contexto() : base ("conn")
         {
             
+
         }
+
+        public DbSet<User>  Usuarios { get; set; }
+
     }
 }

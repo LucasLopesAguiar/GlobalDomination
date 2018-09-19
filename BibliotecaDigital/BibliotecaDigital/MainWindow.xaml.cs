@@ -29,6 +29,7 @@ namespace BibliotecaDigital
         {
             sobreSistema window = new sobreSistema();
             window.ShowDialog();
+
         }
 
         private void new_user_btn_Click(object sender, RoutedEventArgs e)
