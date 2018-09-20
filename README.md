@@ -33,6 +33,7 @@ Tabelas:
 
 Usuário: user_tb    
 id_user;
+active;
 nome_user;
 login;
 pass;
@@ -40,6 +41,7 @@ type_user(bool);
     
 Livros: livros_tb;   
 id_livro;
+active;
 titulo;
 editora;
 categoria;

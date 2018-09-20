@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BibliotecaDigital.Controllers;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,7 @@ namespace BibliotecaDigital
         public MainWindow()
         {
             InitializeComponent();
+
         }
 
         private void help_btn_Click(object sender, RoutedEventArgs e)
@@ -30,6 +32,8 @@ namespace BibliotecaDigital
             sobreSistema window = new sobreSistema();
             window.ShowDialog();
 
+            UserControllers user = new UserControllers();
+            user.ListarUsuarios();
         }
 
         private void new_user_btn_Click(object sender, RoutedEventArgs e)

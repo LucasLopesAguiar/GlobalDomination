@@ -234,5 +234,15 @@
   <ItemGroup>
     <Resource Include="Icons\Gerar_Arquivo.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Controllers\Controllers.csproj">
+      <Project>{2C4AD70C-81FE-4301-AA0C-7AFAD911CF2F}</Project>
+      <Name>Controllers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Modelos\Modelos.csproj">
+      <Project>{6aebd9ea-9d3d-425b-beb4-259753b36376}</Project>
+      <Name>Modelos</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

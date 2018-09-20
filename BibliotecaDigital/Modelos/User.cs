@@ -18,6 +18,7 @@ namespace Modelos
         [Required]
         public string pass { get; set; }
         public bool type_user { get; set; }
+        public bool active { get; set; } //usuario ativo ou não
 
     }
 }
