@@ -121,3 +121,7 @@ Adicionei as seguintes classes para os livros
    
    
    Criar classes na pasta model
+   
+   
+  projeto base para o insert de campos e ViewModel:
+  https://github.com/profdouglasbarcelos/CSharp/tree/3e2018_BATN/Aula0609_MVVM

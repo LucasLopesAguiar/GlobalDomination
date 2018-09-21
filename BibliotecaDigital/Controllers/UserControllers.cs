@@ -13,7 +13,6 @@ namespace BibliotecaDigital.Controllers
         Contexto contexto = new Contexto();
         public void Inserir(User u)//Insert
         {
-            
             contexto.Usuarios.Add(u);
             contexto.SaveChanges();
         }
