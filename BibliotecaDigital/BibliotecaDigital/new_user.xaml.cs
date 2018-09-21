@@ -9,7 +9,7 @@ namespace BibliotecaDigital
     {
         public new_user()
         {
-           
+            
              InitializeComponent();
         }
     }

@@ -26,10 +26,14 @@ Funcionalidades:
 Icones:
 https://www.iconfinder.com/iconsets/office-222
 
+Projeto base para CodeFirst:
+https://github.com/profdouglasbarcelos/CSharp/tree/3e2018_BATN/Aulas/Aula2108_CodeFirst
+
 Tabelas:    
 
 Usuário: user_tb    
 id_user;
+active;
 nome_user;
 login;
 pass;
@@ -37,6 +41,7 @@ type_user(bool);
     
 Livros: livros_tb;   
 id_livro;
+active;
 titulo;
 editora;
 categoria;
@@ -113,3 +118,6 @@ Adicionei as seguintes classes para os livros
     
    --Ultima alteração
    Foi a tela de edição de usuário, irei avaliar a possibilidade de colocar ela em aba.
+   
+   
+   Criar classes na pasta model
