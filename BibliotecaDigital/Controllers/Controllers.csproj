@@ -47,6 +47,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EmprestimosControllers.cs" />
+    <Compile Include="LivrosControllers.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserControllers.cs" />
   </ItemGroup>

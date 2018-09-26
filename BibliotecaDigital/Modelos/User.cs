@@ -22,3 +22,12 @@ namespace Modelos
 
     }
 }
+/* ESTRUTURA DA TABELA
+Usuário: user_tb    
+id_user;
+active;
+nome_user;
+login;
+pass;
+type_user(bool);
+ */

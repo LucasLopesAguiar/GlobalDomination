@@ -17,16 +17,19 @@ namespace BibliotecaDigital.Controllers
             contexto.SaveChanges();
         }
 
-        public List<User> ListarUsuarios()//Select * all
+        public List<User> ListarUsuarios()//Select *
         {
-            
             return contexto.Usuarios.ToList();
         }
 
         public User BuscarPorId(int id)//Busca por id_user
         {
-            
             return contexto.Usuarios.Find(id);
+        }
+
+        public User BuscarPorLogin(string login)
+        {
+            return contexto.Usuarios.Find(login);// busca por login
         }
 
         public void Excluir(int id)//Deletar registro da base de dados através do id_user
@@ -54,5 +57,5 @@ namespace BibliotecaDigital.Controllers
 
 
 
-    }
+    }//Fim da User Controller
 }
