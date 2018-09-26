@@ -1,5 +1,6 @@
 ﻿using Modelos;
 using Modelos.DAL;
+using BibliotecaDigital.Controllers;
 using System;
 using System.Windows;
 
@@ -20,28 +21,39 @@ namespace BibliotecaDigital
 
         private void new_user_btn_Click(object sender, RoutedEventArgs e)
         {
-            User u = new User
+            
+            
+            UserControllers userMethods = new UserControllers();//Chamando os controladores da classe User
+            if (userMethods.BuscarPorLogin(username_text.Text) == null)//Validação
             {
-                active = true,
-                nome_user = username_text_nome.Text,
-                login = username_text.Text,
-                type_user = false,//false = usuario normal e true = adm
-            };
-            if (senha_text.Password == senha_check_text.Password)
+                User u = new User
+                {
+                    active = true,
+                    nome_user = username_text_nome.Text,
+                    login = username_text.Text,
+                    type_user = false,//false = usuario normal e true = adm
+                };
+                if (senha_text.Password == senha_check_text.Password)
+                {
+                    senha_check_label.Content = "Senhas Ok";
+                    u.pass = senha_text.Password;
+
+                    contexto.Usuarios.Add(u);
+                    contexto.SaveChanges();
+
+                    MessageBox.Show("Deu certo");
+                }
+                else
+                {
+                    check_pass_label.Content = "senhas não conferem";
+                }
+            }
+            else
             {
-                u.pass = senha_text.Password;
-
-                contexto.Usuarios.Add(u);
-                contexto.SaveChanges();
-
-                MessageBox.Show("Deu certo");
+                MessageBox.Show("Login já existente");
             }
-            else {
-                check_pass_label.Content = "senhas não conferem";
-            }
-
-
-
+            
+           
         }
     }
 }

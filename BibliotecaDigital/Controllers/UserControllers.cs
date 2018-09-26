@@ -21,7 +21,7 @@ namespace BibliotecaDigital.Controllers
         {
             return contexto.Usuarios.ToList();
         }
-
+        
         public User BuscarPorId(int id)//Busca por id_user
         {
             return contexto.Usuarios.Find(id);
@@ -29,7 +29,12 @@ namespace BibliotecaDigital.Controllers
 
         public User BuscarPorLogin(string login)
         {
-            return contexto.Usuarios.Find(login);// busca por login
+            var lista = from u in contexto.Usuarios
+                        where u.login == login
+                        select u;
+            return contexto.Usuarios.FirstOrDefault();
+            
+            // busca por login
         }
 
         public void Excluir(int id)//Deletar registro da base de dados através do id_user
@@ -41,7 +46,6 @@ namespace BibliotecaDigital.Controllers
                 contexto.SaveChanges();
             }
         }
-
         //Invativar registro para não aparecer na view para o usuario,true é visivel, false é invisivel
         public void InativarRegistro(int id, User novoDadoUser)
         {
