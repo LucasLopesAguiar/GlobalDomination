@@ -27,13 +27,18 @@ namespace BibliotecaDigital.Controllers
             return contexto.Livros.ToList();
         }
 
-        //BUSCA LIVROS POR ID
+        //BUSCA LIVROS POR TItulo
         public Livros BuscarPorTitulo(string Titulo)
         {
             var lista = from li in contexto.Livros
                         where li.titulo == Titulo
                         select li;
             return contexto.Livros.FirstOrDefault();
+        }
+
+        public Livros BuscarPorId(int id)//Busca por id
+        {
+            return contexto.Livros.Find(id);
         }
 
         public Livros ValidarLivro(string titulo, string Autor)
@@ -70,10 +75,10 @@ namespace BibliotecaDigital.Controllers
             }
         }
 
-        //EDITAR USUÁRIOS
-        void Editar(string Titulo, Livros novoDadosLivro)
+        //EDITAR
+        public Livros Editar(int id_livro, Livros novoDadosLivro)
         {
-            Livros LivroAntigo = BuscarPorTitulo(Titulo);
+            Livros LivroAntigo = BuscarPorId(id_livro);
 
             if (LivroAntigo != null)
             {
@@ -91,7 +96,9 @@ namespace BibliotecaDigital.Controllers
                 contexto.Entry(LivroAntigo).State =
                 System.Data.Entity.EntityState.Modified;
                 contexto.SaveChanges();
+                
             }
+            return novoDadosLivro;
         }
 
         //PESQUISAR LIVRO POR NOME

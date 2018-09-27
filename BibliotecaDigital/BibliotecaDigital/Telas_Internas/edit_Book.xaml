@@ -5,53 +5,83 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BibliotecaDigital.Telas_Internas"
         mc:Ignorable="d"
-        Title="Edição de Livro" Height="450" Width="800"
+        Title="Edição de Livro" Height="512.44" Width="700.435"
         WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
     <Grid>
-        <Label Content="Editar Livro" Margin="296,31,284,0" VerticalAlignment="Top" FontSize="22" FontFamily="Arial Black" RenderTransformOrigin="0.5,0.5">
-            <Label.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="-0.368"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Label.RenderTransform>
-        </Label>
-        <Label Content="Número do Livro" HorizontalAlignment="Left" Margin="60,79,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.065,-0.156" Width="150" FontSize="14" FontFamily="Arial"/>
-        <TextBox x:Name="cod_do_livro" HorizontalAlignment="Left" Height="31" Margin="60,110,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="287" Padding="7,7,0,0"/>
-        <DataGrid x:Name="Lista_User" AutoGenerateColumns="True" HorizontalAlignment="Left" Height="221" Margin="60,156,0,0" VerticalAlignment="Top" Width="571"/>
-        <Button x:Name="Button_Alter_book" HorizontalAlignment="Left" Margin="650,300,0,0" VerticalAlignment="Top" Width="118" Height="46" Click="Button_Alter_book_Click">
-            <DockPanel>
-                <Label HorizontalContentAlignment="Left"
-                    DockPanel.Dock="Bottom"
-                    Content =" Editar" Height="24" />
-                <Image Source="/BibliotecaDigital;component/Icons/edit_livro.png" VerticalAlignment="Center" />
-            </DockPanel>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="495*"/>
+            <ColumnDefinition Width="199*"/>
+        </Grid.ColumnDefinitions>
+
+        <Label Content="ID Livro:" HorizontalAlignment="Left" Margin="22,22,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="id_livro_text" HorizontalAlignment="Left" Height="23" Margin="75,26,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button Name="Buscar_id_livro" Content="Buscar" HorizontalAlignment="Left" Margin="200,26,0,0" VerticalAlignment="Top" Width="75" Height="23" Click="Buscar_id_livro_Click"/>
+
+        <Label x:Name="Nome_Book_ADM_Label" Content="Título:" HorizontalAlignment="Left" Margin="10,67,0,0" VerticalAlignment="Top" FontFamily="Arial"/>
+        <TextBox x:Name="Nome_Book_ADM_Text" HorizontalAlignment="Left" Height="23" Margin="11,98,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="629" Padding="27,2,0,0" Grid.ColumnSpan="2" />
+        <Image Source="/BibliotecaDigital;component/Icons/cadastra_livro.png" HorizontalAlignment="Left" Height="21" Margin="11,98,0,0" VerticalAlignment="Top" Width="21" RenderTransformOrigin="1.189,0.554"/>
+        <Label x:Name="Editora_Book_ADM_Label" Content="Editora:" HorizontalAlignment="Left" Margin="11,130,0,0" VerticalAlignment="Top"/>
 
 
-        </Button>
-        <Button x:Name="Button_delete_book" HorizontalAlignment="Left" Margin="650,236,0,0" VerticalAlignment="Top" Width="118" Height="46">
-            <DockPanel>
-                <Label HorizontalContentAlignment="Left"
-                    DockPanel.Dock="Bottom"
-                    Content =" Excluir" Height="24" />
-                <Image Source="/BibliotecaDigital;component/Icons/Excluir_tela_ediçao.png" VerticalAlignment="Center" />
-            </DockPanel>
+        <Label x:Name="Autor_Book_ADM_Label" Content="Autor:" HorizontalAlignment="Left" Margin="11,189,0,0" VerticalAlignment="Top" Width="49" FontFamily="Arial"/>
 
 
-        </Button>
-        <Button x:Name="Button_new_book"   HorizontalAlignment="Left" Margin="650,172,0,0" VerticalAlignment="Top" Width="118" Height="46" Click="Button_new_User_Click">
-            <DockPanel>
-                <Label HorizontalContentAlignment="Left"
-                    DockPanel.Dock="Bottom"
-                    Content ="Novo Livro" Height="24" />
-                <Image Source="/BibliotecaDigital;component/Icons/add_livro.png" VerticalAlignment="Center" />
-            </DockPanel>
+        <Button  x:Name="Alterar_book_user_btn_ADM" Content="Alterar" HorizontalAlignment="Left" Margin="195,422,0,0" VerticalAlignment="Top" Width="122" Height="34" Click="Alterar_book_user_btn_ADM_Click" />
+        <TextBox x:Name="Editora_Book_ADM_Text" HorizontalAlignment="Left" Height="23" Margin="11,161,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="375" Padding="27,2,0,0" />
+        <Image Source="/BibliotecaDigital;component/Icons/cadastra_livro.png" HorizontalAlignment="Left" Height="23" Margin="11,161,0,0" VerticalAlignment="Top" Width="21" RenderTransformOrigin="1.189,0.554"/>
+        <TextBox x:Name="Autor_Book_ADM_Text" HorizontalAlignment="Left" Height="23" Margin="11,220,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="375" Padding="27,2,0,0" />
+        <Image Source="/BibliotecaDigital;component/Icons/cadastra_livro.png" HorizontalAlignment="Left" Height="21" Margin="11,220,0,0" VerticalAlignment="Top" Width="21" RenderTransformOrigin="1.189,0.554"/>
+        <Label x:Name="Categoria_Book_ADM_Label" Content="Categoria:" HorizontalAlignment="Left" Margin="402,130,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="categoria_box" HorizontalAlignment="Left" Margin="402,161,0,0" VerticalAlignment="Top" Width="238" Height="23" Grid.ColumnSpan="2">
+            <ComboBoxItem Content="Biografias"/>
+            <ComboBoxItem Content="Folclore"/>
+            <ComboBoxItem Content="Literatura Brasileira"/>
+            <ComboBoxItem Content="Coleções"/>
+            <ComboBoxItem Content="Genealogia"/>
+            <ComboBoxItem Content="Literatura Estrangeira"/>
+            <ComboBoxItem Content="Comportamento"/>
+            <ComboBoxItem Content="Humor"/>
+            <ComboBoxItem Content="Livros Raros"/>
+            <ComboBoxItem Content="Contos"/>
+            <ComboBoxItem Content="Infantojuvenis"/>
+            <ComboBoxItem Content="Manuscritos"/>
+            <ComboBoxItem Content="Poesia"/>
+            <ComboBoxItem Content="Ficção Científica"/>
+            <ComboBoxItem Content="Jornais"/>
+            <ComboBoxItem Content="Outros Assuntos"/>
+        </ComboBox>
+        <Label x:Name="Pagina_Book_ADM_Label" Content="Página(s):" HorizontalAlignment="Left" Margin="413,217,0,0" VerticalAlignment="Top" Width="68" FontFamily="Arial"/>
+        <TextBox x:Name="Pagina_Book_ADM_Text" HorizontalAlignment="Left" Height="23" Margin="481,220,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="79" Padding="27,2,0,0" MaxLength="5" RenderTransformOrigin="0.347,0.63" Grid.ColumnSpan="2"/>
+        <Image Source="/BibliotecaDigital;component/Icons/cadastra_livro.png" HorizontalAlignment="Left" Height="21" Margin="481,220,0,0" VerticalAlignment="Top" Width="21" RenderTransformOrigin="1.189,0.554" Grid.ColumnSpan="2"/>
+        <Label x:Name="Classe_Book_ADM_Label" Content="Acervo:" HorizontalAlignment="Left" Margin="11,262,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="acervo_box" HorizontalAlignment="Left" Margin="11,293,0,0" VerticalAlignment="Top" Width="306" Height="23">
+            <ComboBoxItem Content="Generalidades"/>
+            <ComboBoxItem Content=" Filosofia. Psicologia"/>
+            <ComboBoxItem Content="Religião"/>
+            <ComboBoxItem Content="Ciências Sociais "/>
+            <ComboBoxItem Content="Linguagem"/>
+            <ComboBoxItem Content="Ciências Naturais. Matemática "/>
+            <ComboBoxItem Content="Tecnologia "/>
+            <ComboBoxItem Content="Artes"/>
+            <ComboBoxItem Content="Literatura "/>
+            <ComboBoxItem Content="Geografia. História"/>
+        </ComboBox>
+        <Label x:Name="AnoPubli_Book_ADM_Label" Content="Ano Publicação:" HorizontalAlignment="Left" Margin="384,290,0,0" VerticalAlignment="Top" Width="97"/>
+        <TextBox x:Name="Ano_Book_ADM_Text" HorizontalAlignment="Left" Height="23" Margin="481,293,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="79" Padding="27,2,0,0" MaxLength="5" RenderTransformOrigin="0.347,0.63" Grid.ColumnSpan="2"/>
+        <Image Source="/BibliotecaDigital;component/Icons/cadastra_livro.png" HorizontalAlignment="Left" Height="21" Margin="481,293,0,0" VerticalAlignment="Top" Width="21" RenderTransformOrigin="1.189,0.554" Grid.ColumnSpan="2"/>
+        <Label x:Name="Descricao_Book_ADM_Label" Content="Descrição:" HorizontalAlignment="Left" Margin="11,340,0,0" VerticalAlignment="Top" Width="67" FontFamily="Arial"/>
+        <TextBox x:Name="Descricao_Book_ADM_Text" HorizontalAlignment="Left" Height="23" Margin="11,366,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="629" Padding="27,2,0,0"  Grid.ColumnSpan="2"/>
+        <Image Source="/BibliotecaDigital;component/Icons/cadastra_livro.png" HorizontalAlignment="Left" Height="21" Margin="11,366,0,0" VerticalAlignment="Top" Width="21" RenderTransformOrigin="1.189,0.554"/>
+        <Button x:Name="Cancelar_book_btn_ADM" Content="Cancelar" HorizontalAlignment="Left" Margin="384,422,0,0" VerticalAlignment="Top" Width="122" Height="34" Grid.ColumnSpan="2"/>
 
 
-        </Button>
-        <Image Source="/BibliotecaDigital;component/Icons/Novo_Livro_Adm.png" HorizontalAlignment="Left" Height="60" Margin="494,10,0,0" VerticalAlignment="Top" Width="81" RenderTransformOrigin="0.562,0.464"/>
+        <Image HorizontalAlignment="Left" Height="58" Margin="304,12,0,0" VerticalAlignment="Top" Width="68"
+               Source="/BibliotecaDigital;component/Icons/Novo_Livro_Adm.png"/>
+        <Label x:Name="Quant_Book_ADM_Label" Content="Quantidade:" HorizontalAlignment="Left" Margin="405,326,0,0" VerticalAlignment="Top" Width="97" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="Quant_Book_ADM_Text" HorizontalAlignment="Left" Height="23" Margin="481,329,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="79" Padding="27,2,0,0" MaxLength="5" RenderTransformOrigin="0.347,0.63" Grid.ColumnSpan="2"/>
+        <Image Source="/BibliotecaDigital;component/Icons/cadastra_livro.png" HorizontalAlignment="Left" Height="21" Margin="481,329,0,0" VerticalAlignment="Top" Width="21" RenderTransformOrigin="1.189,0.554" Grid.ColumnSpan="2"/>
+
+
 
     </Grid>
 </Window>

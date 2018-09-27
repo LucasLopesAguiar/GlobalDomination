@@ -46,6 +46,7 @@ namespace BibliotecaDigital
                     autor = Autor_Book_ADM_Text.Text,
                     qtd_pag = Pagina_Book_ADM_Text.Text,
                     acervo = acervo_box.Text,
+                    
                     ano = Ano_Book_ADM_Text.Text,
                     descricao = Descricao_Book_ADM_Text.Text,
                     quantidade = int.Parse(Quant_Book_ADM_Text_.Text)
