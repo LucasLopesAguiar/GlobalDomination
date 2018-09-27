@@ -38,7 +38,7 @@ namespace BibliotecaDigital
 
         private void new_user_btn_Click(object sender, RoutedEventArgs e)
         {
-            new_user window2 = new new_user();
+            New_user window2 = new New_user();
             window2.ShowDialog();
         }
     }

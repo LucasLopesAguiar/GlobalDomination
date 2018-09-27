@@ -13,21 +13,28 @@ namespace BibliotecaDigital.Controllers
         Contexto contexto = new Contexto();
         public void Inserir(User u)//Insert
         {
-            
             contexto.Usuarios.Add(u);
             contexto.SaveChanges();
         }
 
-        public List<User> ListarUsuarios()//Select * all
+        public List<User> ListarUsuarios()//Select *
         {
-            
             return contexto.Usuarios.ToList();
         }
-
+        
         public User BuscarPorId(int id)//Busca por id_user
         {
-            
             return contexto.Usuarios.Find(id);
+        }
+
+        public User BuscarPorLogin(string login)
+        {
+            var lista = from u in contexto.Usuarios
+                        where u.login == login
+                        select u;
+            return contexto.Usuarios.FirstOrDefault();
+            
+            // busca por login
         }
 
         public void Excluir(int id)//Deletar registro da base de dados através do id_user
@@ -39,7 +46,6 @@ namespace BibliotecaDigital.Controllers
                 contexto.SaveChanges();
             }
         }
-
         //Invativar registro para não aparecer na view para o usuario,true é visivel, false é invisivel
         public void InativarRegistro(int id, User novoDadoUser)
         {
@@ -55,5 +61,5 @@ namespace BibliotecaDigital.Controllers
 
 
 
-    }
+    }//Fim da User Controller
 }

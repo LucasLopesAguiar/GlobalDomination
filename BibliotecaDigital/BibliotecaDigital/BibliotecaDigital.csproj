@@ -86,6 +86,7 @@
     <Compile Include="Telas_Internas\SystemLayoutAdmin.xaml.cs">
       <DependentUpon>SystemLayoutAdmin.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ViewModels\NewUserViewModel.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -118,7 +119,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="new_user.xaml">
+    <Page Include="New_user.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -140,8 +141,8 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="new_user.xaml.cs">
-      <DependentUpon>new_user.xaml</DependentUpon>
+    <Compile Include="New_user.xaml.cs">
+      <DependentUpon>New_user.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
@@ -244,5 +245,6 @@
       <Name>Modelos</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
