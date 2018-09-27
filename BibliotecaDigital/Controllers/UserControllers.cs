@@ -26,16 +26,21 @@ namespace BibliotecaDigital.Controllers
                 return contexto.Usuarios.ToList();
             }
 
-            //BUSCA USUÁRIOS POR ID
+            //BUSCA USUÁRIOS POR Login
             public User BuscarPorLogin(string Login)
             {
             var lista = from u in contexto.Usuarios
                         where u.login == Login
                         select u;
             return contexto.Usuarios.FirstOrDefault();
-        }
+            }
 
-            public User ValidarLogin(string login, string senha)
+            public User BuscarPorId(int id)//Busca por id_user
+            {
+                return contexto.Usuarios.Find(id);
+            }
+
+        public User ValidarLogin(string login, string senha)
             {
                 if (new UserControllers().BuscarPorLogin(login) == null)
                 {

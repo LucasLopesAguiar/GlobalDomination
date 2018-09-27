@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BibliotecaDigital.Controllers;
+using Modelos;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,16 +26,60 @@ namespace BibliotecaDigital.Telas_Internas
             InitializeComponent();
         }
 
-        private void Button_new_User_Click(object sender, RoutedEventArgs e)
+        private void Buscar_id_livro_Click(object sender, RoutedEventArgs e)
         {
-            New_Book_ADM AdicionaNovoLivroWinEdit = new New_Book_ADM();
-            AdicionaNovoLivroWinEdit.ShowDialog();
+            if(id_livro_text.Text == null)
+            {
+                MessageBox.Show("Insira um dado no campo de busca!!");
+            }
+            else
+            {
+                Livros livro = new LivrosControllers().BuscarPorId(int.Parse(id_livro_text.Text));
+                if(livro != null)
+                {
+                    Nome_Book_ADM_Text.Text = livro.titulo;
+                    Editora_Book_ADM_Text.Text = livro.editora;
+                    Autor_Book_ADM_Text.Text = livro.autor;
+                    Pagina_Book_ADM_Text.Text = livro.qtd_pag;
+                    Ano_Book_ADM_Text.Text = livro.ano;
+                    Descricao_Book_ADM_Text.Text = livro.descricao;
+                }
+                else
+                {
+                    MessageBox.Show("Livro não encontrado");
+                    Nome_Book_ADM_Text.Text = "";
+                    Editora_Book_ADM_Text.Text = "";
+                    Autor_Book_ADM_Text.Text = "";
+                    Pagina_Book_ADM_Text.Text = "";
+                    Ano_Book_ADM_Text.Text = "";
+                    Descricao_Book_ADM_Text.Text = "";
+                }
+                
+                
+            }
+
+
         }
 
-        private void Button_Alter_book_Click(object sender, RoutedEventArgs e)
+        private void Alterar_book_user_btn_ADM_Click(object sender, RoutedEventArgs e)
         {
-            New_Book_ADM EditaLivroWinEdit = new New_Book_ADM();
-            EditaLivroWinEdit.ShowDialog();
+            Livros li = new Livros {
+                active = true,
+                titulo = Nome_Book_ADM_Text.Text,
+                editora = Editora_Book_ADM_Text.Text,
+                categoria = categoria_box.Text,
+                autor = Autor_Book_ADM_Text.Text,
+                qtd_pag = Pagina_Book_ADM_Text.Text,
+                acervo = acervo_box.Text,
+                ano = Ano_Book_ADM_Text.Text,
+                descricao = Descricao_Book_ADM_Text.Text
+            };
+            Livros livro = new LivrosControllers().Editar(int.Parse(id_livro_text.Text), li);
+            if (livro != null)
+            {
+                MessageBox.Show("Registro Alterado");
+            }
+
         }
     }
 }
