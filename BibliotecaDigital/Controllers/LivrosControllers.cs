@@ -11,26 +11,57 @@ namespace BibliotecaDigital.Controllers
     public class LivrosControllers
     {
         Contexto contexto = new Contexto();
-        public void Inserir (Livros l)//Insert
+      
+
+
+        //INSERIR NOVO LIVRO
+        public void Inserir(Livros li)
         {
-            contexto.Livros.Add(l);
+            contexto.Livros.Add(li);
             contexto.SaveChanges();
         }
 
-        public List<Livros> ListarLivros()//Select * 
+        //LISTAS LIVROS
+        List<Livros> ListarTodosLivros()
         {
             return contexto.Livros.ToList();
         }
 
-        public Livros BuscarPorId(int id)//Busca por id_livro
+        //BUSCA LIVROS POR ID
+        public Livros BuscarPorTitulo(string Titulo)
         {
-
-            return contexto.Livros.Find(id);
+            var lista = from li in contexto.Livros
+                        where li.titulo == Titulo
+                        select li;
+            return contexto.Livros.FirstOrDefault();
         }
 
-        public void Excluir(int id)//Deletar registro da base de dados através do id_livro
+        public Livros ValidarLivro(string titulo, string Autor)
         {
-            Livros pExcluir = BuscarPorId(id);
+            if (new LivrosControllers().BuscarPorTitulo(titulo) == null)
+            {
+                return null;
+            }
+            else
+            {
+                Livros li = new Livros();
+                li = BuscarPorTitulo(titulo);
+                if (li.autor == Autor)
+                {
+                    return li;
+                }
+                else
+                {
+                    return null;
+                }
+            }
+
+        }
+        //EXLUIR LIVROS
+        void Excluir(string Titulo)
+        {
+            Livros pExcluir = BuscarPorTitulo(Titulo);
+
             if (pExcluir != null)
             {
 
@@ -39,21 +70,35 @@ namespace BibliotecaDigital.Controllers
             }
         }
 
-        //Invativar registro para não aparecer na view para o usuario,true é visivel, false é invisivel
-        public void InativarRegistro(int id, Livros novoDadoLivros)
+        //EDITAR USUÁRIOS
+        void Editar(string Titulo, Livros novoDadosLivro)
         {
-            Livros livroAntigo = BuscarPorId(id);
-            if (livroAntigo != null)
-            {
-                livroAntigo.active = false;
+            Livros LivroAntigo = BuscarPorTitulo(Titulo);
 
-                contexto.Entry(livroAntigo).State = System.Data.Entity.EntityState.Modified;
+            if (LivroAntigo != null)
+            {
+                LivroAntigo.titulo = novoDadosLivro.titulo;
+                LivroAntigo.editora = novoDadosLivro.editora;
+                LivroAntigo.categoria = novoDadosLivro.categoria;
+                LivroAntigo.autor = novoDadosLivro.autor;
+                LivroAntigo.qtd_pag = novoDadosLivro.qtd_pag;
+                LivroAntigo.acervo = novoDadosLivro.acervo;
+                LivroAntigo.ano = novoDadosLivro.ano;
+                LivroAntigo.descricao = novoDadosLivro.descricao;
+                LivroAntigo.quantidade = novoDadosLivro.quantidade;
+
+
+                contexto.Entry(LivroAntigo).State =
+                System.Data.Entity.EntityState.Modified;
                 contexto.SaveChanges();
             }
         }
 
-
-
-
-    }//Fim da public LivrosController
+        //PESQUISAR LIVRO POR NOME
+        List<Livros> PesquisarPorNome(string Titulo)
+        {
+            var lista = from li in contexto.Livros where li.titulo == Titulo select li;
+            return lista.ToList();
+        }
+    }
 }

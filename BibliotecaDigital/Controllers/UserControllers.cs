@@ -11,55 +11,87 @@ namespace BibliotecaDigital.Controllers
     public class UserControllers
     {
         Contexto contexto = new Contexto();
-        public void Inserir(User u)//Insert
-        {
-            contexto.Usuarios.Add(u);
-            contexto.SaveChanges();
-        }
-
-        public List<User> ListarUsuarios()//Select *
-        {
-            return contexto.Usuarios.ToList();
-        }
         
-        public User BuscarPorId(int id)//Busca por id_user
-        {
-            return contexto.Usuarios.Find(id);
-        }
 
-        public User BuscarPorLogin(string login)
-        {
+            //INSERIR NOVO USUÁRIO
+            public void Inserir(User u)
+            {
+                contexto.Usuarios.Add(u);
+                contexto.SaveChanges();
+            }
+
+            //LISTAS USUÁRIOS
+            List<User> ListarTodosUsuarios()
+            {
+                return contexto.Usuarios.ToList();
+            }
+
+            //BUSCA USUÁRIOS POR ID
+            public User BuscarPorLogin(string Login)
+            {
             var lista = from u in contexto.Usuarios
-                        where u.login == login
+                        where u.login == Login
                         select u;
             return contexto.Usuarios.FirstOrDefault();
-            
-            // busca por login
         }
 
-        public void Excluir(int id)//Deletar registro da base de dados através do id_user
-        {
-            User pExcluir = BuscarPorId(id);
-            if(pExcluir != null){
-               
-                contexto.Usuarios.Remove(pExcluir);
-                contexto.SaveChanges();
-            }
-        }
-        //Invativar registro para não aparecer na view para o usuario,true é visivel, false é invisivel
-        public void InativarRegistro(int id, User novoDadoUser)
-        {
-            User userAntigo = BuscarPorId(id);
-            if(userAntigo != null)
+            public User ValidarLogin(string login, string senha)
             {
-                userAntigo.active = false;
-                
-                contexto.Entry(userAntigo).State = System.Data.Entity.EntityState.Modified;
-                contexto.SaveChanges();
+                if (new UserControllers().BuscarPorLogin(login) == null)
+                {
+                    return null;
+                }
+                else
+                {
+                    User u = new User();
+                    u = BuscarPorLogin(login);
+                    if (u.pass == senha)
+                    {
+                        return u;
+                    }
+                    else
+                    {
+                        return null;
+                    }
+                }
+
+            }
+            //EXLUIR USUÁRIOS
+            void Excluir(string Login)
+            {
+                User pExcluir = BuscarPorLogin(Login);
+
+                if (pExcluir != null)
+                {
+
+                    contexto.Usuarios.Remove(pExcluir);
+                    contexto.SaveChanges();
+                }
+            }
+
+            //EDITAR USUÁRIOS
+            void Editar(string Login, User novoDadosUsuario)
+            {
+                User usuarioAntigo = BuscarPorLogin(Login);
+
+                if (usuarioAntigo != null)
+                {
+                    usuarioAntigo.nome_user = novoDadosUsuario.nome_user;
+                    usuarioAntigo.login = novoDadosUsuario.login;
+
+
+                    contexto.Entry(usuarioAntigo).State =
+                    System.Data.Entity.EntityState.Modified;
+                    contexto.SaveChanges();
+                }
+            }
+
+            //PESQUISAR USUÁRIOS POR NOME
+            List<User> PesquisarPorNome(string Login)
+            {
+                var lista = from u in contexto.Usuarios where u.login == Login select u;
+                return lista.ToList();
             }
         }
+    }
 
-
-
-    }//Fim da User Controller
-}

@@ -21,48 +21,48 @@ namespace BibliotecaDigital
 
         private void new_user_btn_Click(object sender, RoutedEventArgs e)
         {
-            
-            
-            UserControllers userMethods = new UserControllers();//Chamando os controladores da classe User
-            if (userMethods.BuscarPorLogin(username_text.Text) == null)//Validação
+            User u = new User
             {
-                User u = new User
-                {
-                    active = true,
-                    nome_user = username_text_nome.Text,
-                    login = username_text.Text,
-                    type_user = false,//false = usuario normal e true = adm
-                };
-                if (senha_text.Password == senha_check_text.Password)
-                {
-                    senha_check_label.Content = "Senhas Ok";
-                    u.pass = senha_text.Password;
+                active = true,
+                nome_user = username_text_nome.Text,
+                login = username_text.Text,
+                type_user = false,//false = usuario normal e true = adm
+            };
 
-                    contexto.Usuarios.Add(u);
-                    contexto.SaveChanges();
-
-                    MessageBox.Show("Deu certo");
-                }
-                else
-                {
-                    check_pass_label.Content = "senhas não conferem";
-                }
+            if (senha_text.Password != senha_check_text.Password)
+            {
+                senha_text.Clear();
+                senha_check_text.Clear();
+                MessageBox.Show("Senhas não conferem");
             }
             else
             {
-                MessageBox.Show("Login já existente");
+                u.pass = senha_text.Password;
             }
-            
-           
+            if (username_text.Text == "" || username_text_nome.Text == "" || senha_text.Password == "" || senha_check_text.Password == "" )
+            {
+                MessageBox.Show("Preencha todos os campos");
+            }
+            else
+            {
+                contexto.Usuarios.Add(u);
+                contexto.SaveChanges();
+                MessageBox.Show("Usuário Cadastrado");
+                username_text.Clear();
+                username_text_nome.Clear();
+                senha_check_text.Clear();
+                senha_text.Clear();
+            }
+
+        }
+
+        private void new_user_btn_cancela_Click(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+            MainWindow VoltaTelaLogin = new MainWindow();
+            VoltaTelaLogin.ShowDialog();
         }
     }
 }
-/* ESTRUTURA DA TABELA
-Usuário: user_tb    
-id_user;
-active;
-nome_user;
-login;
-pass;
-type_user(bool); false = usuario normal e true = adm
- */
+
+     

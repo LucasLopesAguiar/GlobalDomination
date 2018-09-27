@@ -23,13 +23,13 @@
         <Label x:Name="Autor_Book_ADM_Label" Content="Autor:" HorizontalAlignment="Left" Margin="11,189,0,0" VerticalAlignment="Top" Width="49" FontFamily="Arial"/>
 
 
-        <Button  x:Name="Adicionar_book_user_btn_ADM" Content="Adicionar" HorizontalAlignment="Left" Margin="195,422,0,0" VerticalAlignment="Top" Width="122" Height="34" />
+        <Button  x:Name="Adicionar_book_user_btn_ADM" Content="Adicionar" HorizontalAlignment="Left" Margin="195,422,0,0" VerticalAlignment="Top" Width="122" Height="34" Click="Adicionar_book_user_btn_ADM_Click" />
         <TextBox x:Name="Editora_Book_ADM_Text" HorizontalAlignment="Left" Height="23" Margin="11,161,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="375" Padding="27,2,0,0" />
         <Image Source="/BibliotecaDigital;component/Icons/cadastra_livro.png" HorizontalAlignment="Left" Height="23" Margin="11,161,0,0" VerticalAlignment="Top" Width="21" RenderTransformOrigin="1.189,0.554"/>
         <TextBox x:Name="Autor_Book_ADM_Text" HorizontalAlignment="Left" Height="23" Margin="11,220,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="375" Padding="27,2,0,0" />
         <Image Source="/BibliotecaDigital;component/Icons/cadastra_livro.png" HorizontalAlignment="Left" Height="21" Margin="11,220,0,0" VerticalAlignment="Top" Width="21" RenderTransformOrigin="1.189,0.554"/>
         <Label x:Name="Categoria_Book_ADM_Label" Content="Categoria:" HorizontalAlignment="Left" Margin="402,130,0,0" VerticalAlignment="Top"/>
-        <ComboBox HorizontalAlignment="Left" Margin="402,161,0,0" VerticalAlignment="Top" Width="238" Height="23" Grid.ColumnSpan="2">
+        <ComboBox x:Name="categoria_box" HorizontalAlignment="Left" Margin="402,161,0,0" VerticalAlignment="Top" Width="238" Height="23" Grid.ColumnSpan="2">
             <ComboBoxItem Content="Biografias"/>
             <ComboBoxItem Content="Folclore"/>
             <ComboBoxItem Content="Literatura Brasileira"/>
@@ -51,7 +51,7 @@
         <TextBox x:Name="Pagina_Book_ADM_Text" HorizontalAlignment="Left" Height="23" Margin="481,220,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="79" Padding="27,2,0,0" MaxLength="5" RenderTransformOrigin="0.347,0.63" Grid.ColumnSpan="2"/>
         <Image Source="/BibliotecaDigital;component/Icons/cadastra_livro.png" HorizontalAlignment="Left" Height="21" Margin="481,220,0,0" VerticalAlignment="Top" Width="21" RenderTransformOrigin="1.189,0.554" Grid.ColumnSpan="2"/>
         <Label x:Name="Classe_Book_ADM_Label" Content="Acervo:" HorizontalAlignment="Left" Margin="11,262,0,0" VerticalAlignment="Top"/>
-        <ComboBox HorizontalAlignment="Left" Margin="11,293,0,0" VerticalAlignment="Top" Width="306" Height="23">
+        <ComboBox x:Name="acervo_box" HorizontalAlignment="Left" Margin="11,293,0,0" VerticalAlignment="Top" Width="306" Height="23">
             <ComboBoxItem Content="Generalidades"/>
             <ComboBoxItem Content=" Filosofia. Psicologia"/>
             <ComboBoxItem Content="Religião"/>

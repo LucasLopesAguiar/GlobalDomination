@@ -1,4 +1,5 @@
 ﻿using BibliotecaDigital.Controllers;
+using Modelos.DAL;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,14 +14,18 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using BibliotecaDigital;
+
 
 namespace BibliotecaDigital
-{
-    /// <summary>
-    /// Interação lógica para MainWindow.xam
-    /// </summary>
+/// Interação lógica para MainWindow.xam
+/// </summary>
+{ 
     public partial class MainWindow : Window
     {
+
+        Contexto contexto = new Contexto();
+
         public MainWindow()
         {
             InitializeComponent();
@@ -32,14 +37,30 @@ namespace BibliotecaDigital
             sobreSistema window = new sobreSistema();
             window.ShowDialog();
 
-            UserControllers user = new UserControllers();
-            user.ListarUsuarios();
         }
 
         private void new_user_btn_Click(object sender, RoutedEventArgs e)
         {
             New_user window2 = new New_user();
             window2.ShowDialog();
+        }
+
+        private void login_btn_Click(object sender, RoutedEventArgs e)
+        {
+            {
+                if (new UserControllers().ValidarLogin(Login_Text.Text, Pass_txt.Password) != null)
+                {
+                    Telas_Internas.SystemLayout home = new Telas_Internas.SystemLayout();
+                    home.ShowDialog();
+            }
+            else
+                {
+                    Login_Text.Clear();
+                    Pass_txt.Clear();
+                    MessageBox.Show("Usuário ou Senha INVÁLIDO");
+                }
+            }
+
         }
     }
 }
