@@ -25,7 +25,7 @@
         <Image Source="/BibliotecaDigital;component/Icons/pass.png" HorizontalAlignment="Left" Height="21" Margin="306,221,0,0" VerticalAlignment="Top" Width="21" RenderTransformOrigin="1.189,0.554"/>
 
 
-        <Button x:Name="new_user_cadastro_btn_ADM" Content="Cadastrar" HorizontalAlignment="Left" Margin="107,271,0,0" VerticalAlignment="Top" Width="122" Height="34"/>
+        <Button x:Name="new_user_cadastro_btn_ADM" Content="Cadastrar" HorizontalAlignment="Left" Margin="107,271,0,0" VerticalAlignment="Top" Width="122" Height="34" Click="new_user_cadastro_btn_ADM_Click"/>
         <CheckBox x:Name="DefineUserAdm" Content="Usuário Administrador" HorizontalAlignment="Left" Margin="342,158,0,0" VerticalAlignment="Top" FontFamily="Arial"/>
         <TextBox x:Name="nomepessoa_text_ADM" HorizontalAlignment="Left" Height="23" Margin="85,104,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="395" Padding="27,2,0,0" />
         <Image Source="/BibliotecaDigital;component/Icons/user.png" HorizontalAlignment="Left" Height="21" Margin="85,104,0,0" VerticalAlignment="Top" Width="21" RenderTransformOrigin="1.189,0.554"/>

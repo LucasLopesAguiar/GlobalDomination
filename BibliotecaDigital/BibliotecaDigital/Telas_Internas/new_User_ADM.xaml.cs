@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Modelos;
+using Modelos.DAL;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,9 +21,51 @@ namespace BibliotecaDigital
     /// </summary>
     public partial class New_User_ADM : Window
     {
+
+        Contexto contexto = new Contexto();
         public New_User_ADM()
         {
             InitializeComponent();
+        }
+
+        private void new_user_cadastro_btn_ADM_Click(object sender, RoutedEventArgs e)
+        {
+            {
+                User u = new User
+                {
+                    active = true,
+                    nome_user = nomepessoa_text_ADM.Text,
+                    login = username_text_ADM.Text,
+                                
+                    type_user = false,//false = usuario normal e true = adm
+                };
+
+                if (senha_text_ADM.Password != senha_check_text_ADM.Password)
+                {
+                    senha_text_ADM.Clear();
+                    senha_check_text_ADM.Clear();
+                    MessageBox.Show("Senhas não conferem");
+                }
+                else
+                {
+                    u.pass = senha_text_ADM.Password;
+                }
+                if (nomepessoa_text_ADM.Text == "" || username_text_ADM.Text == "" || senha_text_ADM.Password == "" || senha_check_text_ADM.Password == "")
+                {
+                    MessageBox.Show("Preencha todos os campos");
+                }
+                else
+                {
+                    contexto.Usuarios.Add(u);
+                    contexto.SaveChanges();
+                    MessageBox.Show("Usuário Cadastrado");
+                    nomepessoa_text_ADM.Clear();
+                    username_text_ADM.Clear();
+                    senha_text_ADM.Clear();
+                    senha_check_text_ADM.Clear();
+                }
+
+            }
         }
     }
 }
