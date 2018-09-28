@@ -5,53 +5,34 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BibliotecaDigital.Telas_Internas"
         mc:Ignorable="d"
-        Title="Edição de usuário" Height="450" Width="800"
+        Title="Edição de usuário" Height="450" Width="631.746"
         WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
-    <Grid>
-        <Label Content="Editar Usuário" Margin="296,31,284,0" VerticalAlignment="Top" FontSize="22" FontFamily="Arial Black" RenderTransformOrigin="0.5,0.5">
-            <Label.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="-0.368"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Label.RenderTransform>
-        </Label>
-        <Label Content="Matrícula do Usuário" HorizontalAlignment="Left" Margin="60,79,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.065,-0.156" Width="150" FontSize="14" FontFamily="Arial"/>
-        <TextBox x:Name="cod_do_usuario" HorizontalAlignment="Left" Height="31" Margin="60,110,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="287" Padding="7,7,0,0"/>
-        <DataGrid x:Name="Lista_User" AutoGenerateColumns="True" HorizontalAlignment="Left" Height="221" Margin="60,156,0,0" VerticalAlignment="Top" Width="571"/>
-        <Button x:Name="Button_Alter" HorizontalAlignment="Left" Margin="650,300,0,0" VerticalAlignment="Top" Width="118" Height="46" Click="Button_Alter_Click">
-            <DockPanel>
-                <Label HorizontalContentAlignment="Left"
-                    DockPanel.Dock="Bottom"
-                    Content =" Editar" Height="24" />
-                <Image Source="/BibliotecaDigital;component/Icons/edit_user.png" VerticalAlignment="Center" />
-            </DockPanel>
+    <Grid Margin="0,0,4,-19">
+        <Grid Margin="0,0,0,10">
+            <Label x:Name="title_label_ADM" Content="Novo usuário" HorizontalAlignment="Left" Margin="207,10,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
+
+            <Label x:Name="login_label_ADM" Content="Login:" HorizontalAlignment="Left" Margin="87,127,0,0" VerticalAlignment="Top" FontFamily="Arial"/>
+            <TextBox x:Name="username_text_ADM" HorizontalAlignment="Left" Height="23" Margin="87,158,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="174" Padding="27,2,0,0" MaxLength="15"/>
+            <Image Source="/BibliotecaDigital;component/Icons/user.png" HorizontalAlignment="Left" Height="21" Margin="87,160,0,0" VerticalAlignment="Top" Width="21" RenderTransformOrigin="1.189,0.554"/>
+
+            <Label x:Name="senha_label_ADM" Content="Senha:" HorizontalAlignment="Left" Margin="85,194,0,0" VerticalAlignment="Top" FontFamily="Arial"/>
+            <PasswordBox  x:Name="senha_text_ADM"  HorizontalAlignment="Left" Height="23" Margin="85,220,0,0" VerticalAlignment="Top" Width="174" Padding="27,2,0,0" MaxLength="15"/>
+            <Image Source="/BibliotecaDigital;component/Icons/pass.png" HorizontalAlignment="Left" Height="21" Margin="87,222,0,0" VerticalAlignment="Top" Width="21" RenderTransformOrigin="1.189,0.554"/>
 
 
-        </Button>
-        <Button x:Name="Button_delete" HorizontalAlignment="Left" Margin="650,236,0,0" VerticalAlignment="Top" Width="118" Height="46">
-            <DockPanel>
-                <Label HorizontalContentAlignment="Left"
-                    DockPanel.Dock="Bottom"
-                    Content =" Excluir" Height="24" />
-                <Image Source="/BibliotecaDigital;component/Icons/Excluir_tela_ediçao.png" VerticalAlignment="Center" />
-            </DockPanel>
+            <Button x:Name="Busca_ID" Content="Buscar" HorizontalAlignment="Left" Margin="247,285,0,0" VerticalAlignment="Top" Width="122" Height="20" Click="new_user_cadastro_btn_ADM_Click"/>
+            <TextBox x:Name="nomepessoa_text_ADM" HorizontalAlignment="Left" Height="23" Margin="85,104,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="395" Padding="27,2,0,0" />
+            <Image Source="/BibliotecaDigital;component/Icons/user.png" HorizontalAlignment="Left" Height="21" Margin="85,104,0,0" VerticalAlignment="Top" Width="21" RenderTransformOrigin="1.189,0.554"/>
+            <Label x:Name="nomepessoa_label_ADM_Copy" Content="Nome Completo:" HorizontalAlignment="Left" Margin="87,78,0,0" VerticalAlignment="Top" FontFamily="Arial"/>
+            <Button x:Name="new_user_cancela_btn_ADM_la" Content="Cancelar" HorizontalAlignment="Left" Margin="460,166,0,0" VerticalAlignment="Top" Width="122" Height="34" Click="new_user_cancela_btn_ADM_la_Click"/>
+            <Button x:Name="Deleta_User" Content="Deletar" HorizontalAlignment="Left" Margin="460,220,0,0" VerticalAlignment="Top" Width="122" Height="34" Click="Deleta_User_Click"/>
+            <TextBox x:Name="Buscar_emID" HorizontalAlignment="Left" Height="20" Margin="87,285,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142"/>
+            <Button x:Name="Alterar_btn" Content="Alterar" HorizontalAlignment="Left" Margin="460,271,0,0" VerticalAlignment="Top" Width="122" Height="34" Click="Alterar_btn_Click"/>
 
 
-        </Button>
-        <Button x:Name="Button_new_User"   HorizontalAlignment="Left" Margin="650,172,0,0" VerticalAlignment="Top" Width="118" Height="46" Click="Button_new_User_Click">
-            <DockPanel>
-                <Label HorizontalContentAlignment="Left"
-                    DockPanel.Dock="Bottom"
-                    Content ="Novo Usuário" Height="24" />
-                <Image Source="/BibliotecaDigital;component/Icons/Adicionar_tela_ediçao.png" VerticalAlignment="Center" />
-            </DockPanel>
 
 
-        </Button>
-        <Image Source="/BibliotecaDigital;component/Icons/IconeEdit.png" HorizontalAlignment="Left" Height="55" Margin="494,10,0,0" VerticalAlignment="Top" Width="72" RenderTransformOrigin="0.562,0.464"/>
 
+        </Grid>
     </Grid>
 </Window>

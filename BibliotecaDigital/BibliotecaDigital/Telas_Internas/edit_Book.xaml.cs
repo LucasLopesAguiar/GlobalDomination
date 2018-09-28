@@ -81,5 +81,43 @@ namespace BibliotecaDigital.Telas_Internas
             }
 
         }
+
+        private void Cancelar_book_btn_ADM_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+            BibliotecaDigital.Telas_Internas.SystemLayout VoltaAdeme =  new  BibliotecaDigital.Telas_Internas.SystemLayout();
+            VoltaAdeme.ShowDialog();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            {
+                if (new LivrosControllers().BuscarPorId(int.Parse(id_livro_text.Text)) != null)
+                {
+                    if (MessageBox.Show("Deseja realmente excluir?", "Question", MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.No)
+                    {
+
+                        Nome_Book_ADM_Text.Clear();
+                        Editora_Book_ADM_Text.Clear();
+                        Autor_Book_ADM_Text.Clear();
+                        Pagina_Book_ADM_Text.Clear();
+                        Ano_Book_ADM_Text.Clear();
+                        Descricao_Book_ADM_Text.Clear();
+
+                    }
+                    else
+                    {
+                        new LivrosControllers().Excluir(id_livro_text.Text);
+                        MessageBox.Show("Usuário excluído com sucesso!");
+                        edit_Book editbook = new edit_Book();
+                        this.Close();
+                        editbook.ShowDialog();
+
+                    }
+                }
+                else { MessageBox.Show("Selecione um Livro"); }
+            }
+
+        }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using Modelos;
 using Modelos.DAL;
 using System;
+using BibliotecaDigital.Controllers;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -36,7 +37,7 @@ namespace BibliotecaDigital
                     active = true,
                     nome_user = nomepessoa_text_ADM.Text,
                     login = username_text_ADM.Text,
-                                
+
                     type_user = false,//false = usuario normal e true = adm
                 };
 
@@ -56,16 +57,24 @@ namespace BibliotecaDigital
                 }
                 else
                 {
-                    contexto.Usuarios.Add(u);
-                    contexto.SaveChanges();
-                    MessageBox.Show("Usuário Cadastrado");
-                    nomepessoa_text_ADM.Clear();
-                    username_text_ADM.Clear();
-                    senha_text_ADM.Clear();
-                    senha_check_text_ADM.Clear();
+                    if (new UserControllers().BuscarPorLogin(u.login) != null)
+                    {
+                        username_text_ADM.Clear();
+                        MessageBox.Show("Usuário já existe");
+                    }
+                    else
+                    {
+                        new UserControllers().Inserir(u);
+                        MessageBox.Show("Usuário cadastrado com sucesso!");
+                        MainWindow login = new MainWindow();
+                        this.Close();
+                        login.ShowDialog();
+                    }
                 }
 
             }
+
         }
+
     }
 }

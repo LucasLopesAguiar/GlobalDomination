@@ -72,7 +72,7 @@
         <Label x:Name="Descricao_Book_ADM_Label" Content="Descrição:" HorizontalAlignment="Left" Margin="11,340,0,0" VerticalAlignment="Top" Width="67" FontFamily="Arial"/>
         <TextBox x:Name="Descricao_Book_ADM_Text" HorizontalAlignment="Left" Height="23" Margin="11,366,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="629" Padding="27,2,0,0"  Grid.ColumnSpan="2"/>
         <Image Source="/BibliotecaDigital;component/Icons/cadastra_livro.png" HorizontalAlignment="Left" Height="21" Margin="11,366,0,0" VerticalAlignment="Top" Width="21" RenderTransformOrigin="1.189,0.554"/>
-        <Button x:Name="Cancelar_book_btn_ADM" Content="Cancelar" HorizontalAlignment="Left" Margin="384,422,0,0" VerticalAlignment="Top" Width="122" Height="34" Grid.ColumnSpan="2"/>
+        <Button x:Name="Cancelar_book_btn_ADM" Content="Cancelar" HorizontalAlignment="Left" Margin="0,422,0,0" VerticalAlignment="Top" Width="122" Height="34" RenderTransformOrigin="0.476,0.218" Grid.Column="1" Click="Cancelar_book_btn_ADM_Click"/>
 
 
         <Image HorizontalAlignment="Left" Height="58" Margin="304,12,0,0" VerticalAlignment="Top" Width="68"
@@ -80,6 +80,7 @@
         <Label x:Name="Quant_Book_ADM_Label" Content="Quantidade:" HorizontalAlignment="Left" Margin="405,326,0,0" VerticalAlignment="Top" Width="97" Grid.ColumnSpan="2"/>
         <TextBox x:Name="Quant_Book_ADM_Text" HorizontalAlignment="Left" Height="23" Margin="481,329,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="79" Padding="27,2,0,0" MaxLength="5" RenderTransformOrigin="0.347,0.63" Grid.ColumnSpan="2"/>
         <Image Source="/BibliotecaDigital;component/Icons/cadastra_livro.png" HorizontalAlignment="Left" Height="21" Margin="481,329,0,0" VerticalAlignment="Top" Width="21" RenderTransformOrigin="1.189,0.554" Grid.ColumnSpan="2"/>
+        <Button Content="Deletar" HorizontalAlignment="Left" Margin="345,422,0,0" VerticalAlignment="Top" Width="121" Height="34" Click="Button_Click"/>
 
 
 

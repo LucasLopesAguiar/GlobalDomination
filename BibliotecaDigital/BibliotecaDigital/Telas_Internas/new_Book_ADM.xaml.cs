@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using BibliotecaDigital.Controllers;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -13,7 +14,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using BibliotecaDigital.Controllers;
+
 
 namespace BibliotecaDigital
 {
@@ -32,42 +33,50 @@ namespace BibliotecaDigital
 
         private void Adicionar_book_user_btn_ADM_Click(object sender, RoutedEventArgs e)
         {
+            
+            Livros li = new Livros
             {
 
+                active = true,
+                titulo = Nome_Book_ADM_Text.Text,
+                editora = Editora_Book_ADM_Text.Text,
+                categoria = categoria_box.Text,
+                autor = Autor_Book_ADM_Text.Text,
+                qtd_pag = Pagina_Book_ADM_Text.Text,
+                acervo = acervo_box.Text,
+
+                ano = Ano_Book_ADM_Text.Text,
+                descricao = Descricao_Book_ADM_Text.Text,
+            };
+            if(Quant_Book_ADM_Text_ != null)
+            {
+                li.quantidade = int.Parse(Quant_Book_ADM_Text_.Text);
             }
 
-                Livros li = new Livros
-                {
-
-                    active = true,
-                    titulo = Nome_Book_ADM_Text.Text,
-                    editora = Editora_Book_ADM_Text.Text,
-                    categoria = categoria_box.Text,
-                    autor = Autor_Book_ADM_Text.Text,
-                    qtd_pag = Pagina_Book_ADM_Text.Text,
-                    acervo = acervo_box.Text,
-                    
-                    ano = Ano_Book_ADM_Text.Text,
-                    descricao = Descricao_Book_ADM_Text.Text,
-                    quantidade = int.Parse(Quant_Book_ADM_Text_.Text)
-                };
-
-            
             if (Nome_Book_ADM_Text.Text == "" || Autor_Book_ADM_Text.Text == "" || Ano_Book_ADM_Text.Text == "")
             {
                 MessageBox.Show("Preencha todos os campos");
             }
-             
+            else
+            {
+                if (new LivrosControllers().BuscarPorTitulo(li.titulo) != null)
+                {
+                    Nome_Book_ADM_Text.Clear();
+                    MessageBox.Show("O Livro já Existe!");
+                }
                 else
-                
-                contexto.Livros.Add(li);
-                contexto.SaveChanges();
-                MessageBox.Show("Livro Cadastrado");
-
+                {
+                    new LivrosControllers().Inserir(li);
+                    MessageBox.Show("Cadastrado!");
+                    BibliotecaDigital.Telas_Internas.SystemLayout VoltaTela = new BibliotecaDigital.Telas_Internas.SystemLayout();
+                    this.Close();
+                    VoltaTela.ShowDialog();
+                }
             }
 
         }
     }
+}
 
 
 
@@ -75,7 +84,7 @@ namespace BibliotecaDigital
 
 
 
-       
 
-            
+
+
    

@@ -62,7 +62,7 @@ namespace BibliotecaDigital.Controllers
 
             }
             //EXLUIR USUÁRIOS
-            void Excluir(string Login)
+           public void Excluir(string Login)
             {
                 User pExcluir = BuscarPorLogin(Login);
 
@@ -75,7 +75,7 @@ namespace BibliotecaDigital.Controllers
             }
 
             //EDITAR USUÁRIOS
-            void Editar(string Login, User novoDadosUsuario)
+            public void Editar(string Login, User novoDadosUsuario)
             {
                 User usuarioAntigo = BuscarPorLogin(Login);
 

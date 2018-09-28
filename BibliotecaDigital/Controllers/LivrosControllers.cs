@@ -30,11 +30,17 @@ namespace BibliotecaDigital.Controllers
         //BUSCA LIVROS POR TItulo
         public Livros BuscarPorTitulo(string Titulo)
         {
-            var lista = from li in contexto.Livros
-                        where li.titulo == Titulo
-                        select li;
-            return contexto.Livros.FirstOrDefault();
+            List<Livros> livros = new LivrosControllers().ListarTodosLivros();
+            foreach (Livros item in livros)
+            {
+                if (item.titulo == Titulo)
+                {
+                    return item;
+                }
+            }
+            return null;
         }
+
 
         public Livros BuscarPorId(int id)//Busca por id
         {
@@ -63,7 +69,7 @@ namespace BibliotecaDigital.Controllers
 
         }
         //EXLUIR LIVROS
-        void Excluir(string Titulo)
+            public void Excluir(string Titulo)
         {
             Livros pExcluir = BuscarPorTitulo(Titulo);
 
