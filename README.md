@@ -120,6 +120,7 @@ Adicionei as seguintes classes para os livros
     
    --Ultima alteração
    Foi a tela de edição de usuário, irei avaliar a possibilidade de colocar ela em aba.
+   Sistema atualmente efetua o gerenciamento de cadastro de biblioteca.
    
    
    Criar classes na pasta model
