@@ -29,7 +29,7 @@
         <TextBox x:Name="nomepessoa_text_ADM" HorizontalAlignment="Left" Height="23" Margin="85,104,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="395" Padding="27,2,0,0" />
         <Image Source="/BibliotecaDigital;component/Icons/user.png" HorizontalAlignment="Left" Height="21" Margin="85,104,0,0" VerticalAlignment="Top" Width="21" RenderTransformOrigin="1.189,0.554"/>
         <Label x:Name="nomepessoa_label_ADM_Copy" Content="Nome Completo:" HorizontalAlignment="Left" Margin="87,78,0,0" VerticalAlignment="Top" FontFamily="Arial"/>
-        <Button x:Name="new_user_cancela_btn_ADM_Copy" Content="Cancelar" HorizontalAlignment="Left" Margin="306,271,0,0" VerticalAlignment="Top" Width="122" Height="34"/>
+        <Button x:Name="new_user_cancela_btn_ADM_Copy" Content="Cancelar" HorizontalAlignment="Left" Margin="306,271,0,0" VerticalAlignment="Top" Width="122" Height="34" Click="new_user_cancela_btn_ADM_Copy_Click"/>
 
 
 

@@ -28,12 +28,19 @@ namespace BibliotecaDigital.Controllers
 
             //BUSCA USUÁRIOS POR Login
             public User BuscarPorLogin(string Login)
+
+        {  
+            List<User> users = new UserControllers().ListarTodosUsuarios();
+            foreach (User login in users)
             {
-            var lista = from u in contexto.Usuarios
-                        where u.login == Login
-                        select u;
-            return contexto.Usuarios.FirstOrDefault();
-            }
+                if (login.login == Login)
+                {
+                    return login;
+                }
+}
+            return null;
+        }
+
 
             public User BuscarPorId(int id)//Busca por id_user
             {
@@ -62,9 +69,9 @@ namespace BibliotecaDigital.Controllers
 
             }
             //EXLUIR USUÁRIOS
-           public void Excluir(string Login)
+           public void Excluir(int id)
             {
-                User pExcluir = BuscarPorLogin(Login);
+                User pExcluir = BuscarPorId(id);
 
                 if (pExcluir != null)
                 {

@@ -55,7 +55,7 @@
                     <MenuItem Header=""></MenuItem>
                 </MenuItem>
 
-                <MenuItem Header="Emprestimos" Width="89" Height="27">
+                <MenuItem x:Name="Emprestimo" Header="Emprestimos" Width="89" Height="27" IsEnabled="False" >
                     <!-- Terceiro Menu -->
                     <MenuItem x:Name="Novo_emprestimoow" Header="Novo" Click="Novo_emprestimoow_Click">
                         <MenuItem.Icon>

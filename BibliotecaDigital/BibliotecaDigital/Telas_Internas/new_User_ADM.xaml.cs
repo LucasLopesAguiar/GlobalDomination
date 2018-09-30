@@ -66,9 +66,7 @@ namespace BibliotecaDigital
                     {
                         new UserControllers().Inserir(u);
                         MessageBox.Show("Usuário cadastrado com sucesso!");
-                        MainWindow login = new MainWindow();
-                        this.Close();
-                        login.ShowDialog();
+                        
                     }
                 }
 
@@ -76,5 +74,9 @@ namespace BibliotecaDigital
 
         }
 
+        private void new_user_cancela_btn_ADM_Copy_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }

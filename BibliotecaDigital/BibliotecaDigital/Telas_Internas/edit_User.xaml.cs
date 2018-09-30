@@ -114,7 +114,7 @@ namespace BibliotecaDigital.Telas_Internas
                 }
                 else
                 {
-                    new UserControllers().Excluir(Buscar_emID.Text);
+                    new UserControllers().Excluir(int.Parse(Buscar_emID.Text));
                     MessageBox.Show("Usuário excluído com sucesso!");
                     edit_User edit = new edit_User();
                     this.Close();
@@ -128,8 +128,7 @@ namespace BibliotecaDigital.Telas_Internas
         private void new_user_cancela_btn_ADM_la_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
-            BibliotecaDigital.Telas_Internas.SystemLayout VoltaAdeme = new BibliotecaDigital.Telas_Internas.SystemLayout();
-            VoltaAdeme.ShowDialog();
+            
         }
     }
 }

@@ -69,9 +69,9 @@ namespace BibliotecaDigital.Controllers
 
         }
         //EXLUIR LIVROS
-            public void Excluir(string Titulo)
+            public void Excluir(int id)
         {
-            Livros pExcluir = BuscarPorTitulo(Titulo);
+            Livros pExcluir = BuscarPorId(id);
 
             if (pExcluir != null)
             {

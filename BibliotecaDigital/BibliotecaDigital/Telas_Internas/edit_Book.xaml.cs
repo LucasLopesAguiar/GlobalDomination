@@ -85,8 +85,7 @@ namespace BibliotecaDigital.Telas_Internas
         private void Cancelar_book_btn_ADM_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
-            BibliotecaDigital.Telas_Internas.SystemLayout VoltaAdeme =  new  BibliotecaDigital.Telas_Internas.SystemLayout();
-            VoltaAdeme.ShowDialog();
+            
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -107,8 +106,8 @@ namespace BibliotecaDigital.Telas_Internas
                     }
                     else
                     {
-                        new LivrosControllers().Excluir(id_livro_text.Text);
-                        MessageBox.Show("Usuário excluído com sucesso!");
+                        new LivrosControllers().Excluir(int.Parse(id_livro_text.Text));
+                        MessageBox.Show("Livro excluído com sucesso!");
                         edit_Book editbook = new edit_Book();
                         this.Close();
                         editbook.ShowDialog();

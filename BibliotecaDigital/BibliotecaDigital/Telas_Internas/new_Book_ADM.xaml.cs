@@ -48,10 +48,10 @@ namespace BibliotecaDigital
                 ano = Ano_Book_ADM_Text.Text,
                 descricao = Descricao_Book_ADM_Text.Text,
             };
-            if(Quant_Book_ADM_Text_ != null)
-            {
-                li.quantidade = int.Parse(Quant_Book_ADM_Text_.Text);
-            }
+            //if(Quant_Book_ADM_Text_ != null)
+            //{
+            //    li.quantidade = int.Parse(Quant_Book_ADM_Text_.Text);
+            //}
 
             if (Nome_Book_ADM_Text.Text == "" || Autor_Book_ADM_Text.Text == "" || Ano_Book_ADM_Text.Text == "")
             {
@@ -68,12 +68,15 @@ namespace BibliotecaDigital
                 {
                     new LivrosControllers().Inserir(li);
                     MessageBox.Show("Cadastrado!");
-                    BibliotecaDigital.Telas_Internas.SystemLayout VoltaTela = new BibliotecaDigital.Telas_Internas.SystemLayout();
-                    this.Close();
-                    VoltaTela.ShowDialog();
+                    
                 }
             }
 
+        }
+
+        private void Cancelar_book_btn_ADM_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }
