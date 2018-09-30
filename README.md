@@ -23,6 +23,8 @@ Funcionalidades:
 - Consulta de Empréstimos por usuário
 - Mostrar ao Admin se um empréstimo passou ou não da data de devolução
 
+Revendo possibilidade de ajuste nas telas de emprestimo.
+
 Icones:
 https://www.iconfinder.com/iconsets/office-222
 
